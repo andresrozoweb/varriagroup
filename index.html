@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Varria Group | Eventos y activaciones para grandes empresas</title>
+<meta name="description" content="Creamos experiencias que venden y conectan. Eventos y activaciones para grandes empresas desde Bogotá y México.">
+<meta name="theme-color" content="#0F0F10">
+<meta property="og:title" content="Varria Group | Experiencias que venden y conectan">
+<meta property="og:description" content="Eventos y activaciones para grandes empresas.">
+<meta property="og:image" content="assets/hero-1.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F0F10'/%3E%3Ccircle cx='23' cy='22' r='3.2' fill='%23D62828'/%3E%3Cpath d='M6 8h4l5 12 5-12h4' stroke='%23fff' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#E7E7E5;font-family:'Archivo',system-ui,sans-serif;color:#0F0F10}
+a{color:inherit;text-decoration:none}
+.nav a:hover{opacity:.55}
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,#0F0F10 0%,var(--blue) 100%)}
+.ph.r{background:linear-gradient(135deg,var(--blue) 0%,var(--red) 120%)}
+.ph.k{background:linear-gradient(160deg,#0F0F10 20%,#2a2a33 100%)}
+.ph.m{background:linear-gradient(140deg,var(--red) 0%,#0F0F10 100%)}
+.ph.b{background:linear-gradient(150deg,var(--blue) 0%,#0b1d5c 100%)}
+.ph span{position:absolute;left:22px;bottom:20px;font-size:13px;font-weight:500;letter-spacing:.01em;color:#F7F4EE;opacity:.85;max-width:78%}
+.case{display:block}
+.case .clip{overflow:hidden;border-radius:6px}
+.case .ph{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.case:hover .ph{transform:scale(1.03)}
+.row:hover{background:#0F0F10;color:#F7F4EE}
+.row:hover .num{color:var(--red)}
+.pill:hover{background:#0F0F10}
+.pill2:hover{background:#E7E7E5;color:#0F0F10}
+.lnk:hover{color:var(--blue)}
+.scroller{display:flex;gap:20px;overflow-x:auto;padding-bottom:16px;scroll-snap-type:x mandatory}
+.scroller>a{flex:0 0 clamp(260px,30vw,420px);scroll-snap-align:start}
+.marq{display:flex;width:max-content;animation:slide 40s linear infinite}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marq{animation:none}.case .ph{transition:none}}
+.vid{position:absolute;inset:0;background:radial-gradient(55% 60% at 18% 28%,var(--blue) 0%,transparent 62%),radial-gradient(50% 55% at 82% 72%,var(--red) 0%,transparent 60%),radial-gradient(40% 40% at 60% 20%,rgba(255,255,255,.22) 0%,transparent 60%),#0F0F10;background-size:170% 170%;}
+@keyframes drift{from{background-position:0% 0%}to{background-position:100% 100%}}
+.shade{position:absolute;inset:0;background:radial-gradient(75% 45% at 50% 50%,rgba(15,15,16,.45),rgba(15,15,16,0) 100%),linear-gradient(rgba(15,15,16,.45),rgba(15,15,16,.45)),linear-gradient(180deg,rgba(15,15,16,.35) 0%,rgba(15,15,16,0) 30%,rgba(15,15,16,0) 70%,rgba(15,15,16,.4) 100%)}
+@media (prefers-reduced-motion:reduce){.vid{animation:none}}
+.w{opacity:1}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.prog,.float{display:none}
+.hs{--cw:clamp(300px,62vw,900px);--gap:32px;--pad:clamp(20px,5vw,72px);padding-top:48px}
+.hs-in{overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px}
+.track{display:flex;gap:var(--gap);padding:0 var(--pad);width:max-content;--end:calc(100vw - 5*var(--cw) - 4*var(--gap) - 2*var(--pad))}
+.card{flex:0 0 var(--cw);scroll-snap-align:start}
+.hsbar{display:none}
+.cnt{display:block;counter-reset:c var(--n)}
+.cnt::after{content:counter(c)}
+.cnt.plus::after{content:counter(c) "+"}
+@property --n{syntax:'<integer>';inherits:false;initial-value:0}
+@keyframes hx{to{transform:translateX(var(--end))}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes wr{from{opacity:.2}to{opacity:1}}
+@keyframes cnt{from{--n:0}}
+@keyframes heroout{to{opacity:0;transform:translateY(-70px) scale(.97)}}
+@keyframes vidz{to{transform:scale(1.18)}}
+@keyframes fl{from{opacity:0;visibility:hidden;transform:translateY(12px)}to{opacity:1;visibility:visible;transform:none}}
+@supports (animation-timeline:view()){
+.prog{display:block;position:fixed;left:0;top:0;width:100%;height:4px;background:var(--red);transform-origin:0 50%;z-index:60;animation:grow linear both;animation-timeline:scroll(root)}
+.float{display:block;position:fixed;right:20px;bottom:20px;z-index:50;background:var(--blue);color:#fff;border-radius:999px;padding:15px 28px;font-size:16px;font-weight:500;animation:fl linear both;animation-timeline:scroll(root);animation-range:60vh 100vh}
+.hs{view-timeline:--hs block;height:320vh;padding-top:0}
+.hs-in{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:32px;padding-bottom:0}
+.track{animation:hx linear both;animation-timeline:--hs;animation-range:contain 0% contain 100%}
+.hsbar{display:block;height:3px;margin:0 var(--pad);background:#0F0F10;transform-origin:0 50%;animation:grow linear both;animation-timeline:--hs;animation-range:contain 0% contain 100%}
+.heroc{animation:heroout linear both;animation-timeline:view();animation-range:exit 0% exit 80%}
+#herovid{animation:vidz linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+.w{opacity:.2;animation:wr linear both;animation-timeline:view();animation-range:entry calc(10% + var(--i)*3%) entry calc(45% + var(--i)*3%)}
+.cnt{animation:cnt linear forwards;animation-timeline:view();animation-range:entry 0% entry 90%}
+}
+@media (prefers-reduced-motion:reduce){
+.prog,.float,.hsbar{display:none!important}
+.hs{height:auto!important}
+.hs-in{position:static!important;height:auto!important;overflow-x:auto!important}
+.track,.heroc,#herovid,.w,.cnt{animation:none!important}
+.w{opacity:1!important}
+}
+h1{font-weight:700!important}
+h2{font-weight:700!important;letter-spacing:-.055em!important}
+.ttl,.scroller .ttl{font-weight:700!important}
+[style*="clamp(80px,12vw,200px)"],[style*="clamp(28px,3.2vw,48px)"]{font-weight:700!important}
+.disp,h1,h2,.ttl,.marq,[style*="clamp(80px,12vw,200px)"],[style*="clamp(28px,3.2vw,48px)"]{font-family:'Archivo',system-ui,sans-serif!important}
+h1,h2{font-weight:900!important;letter-spacing:-.05em!important}
+h1{font-size:clamp(40px,7.4vw,136px)!important;line-height:1!important;letter-spacing:-.045em!important;font-weight:800!important;text-shadow:0 2px 32px rgba(0,0,0,.4)}
+.ttl,.scroller .ttl,.marq{font-weight:800!important;letter-spacing:-.035em!important}
+[style*="clamp(80px,12vw,200px)"],[style*="clamp(28px,3.2vw,48px)"]{font-weight:900!important;letter-spacing:-.045em!important}
+.it{font-style:normal;font-weight:900}
+.big{font-family:'Archivo',system-ui,sans-serif;font-weight:900;font-size:clamp(52px,5.2vw,96px);line-height:.95;letter-spacing:-.05em;white-space:nowrap}
+.cap{font-size:clamp(16px,1.3vw,19px);line-height:1.4;margin-top:14px;color:#44443f;max-width:260px}
+.cnt.pct::after{content:"+" counter(c) "%"}
+@supports (animation-timeline:view()){.big{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 40%}}
+@media (prefers-reduced-motion:reduce){.big{animation:none!important}}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.5))}
+.ph span{z-index:2;background:rgba(0,0,0,.5);padding:5px 12px;border-radius:999px;font-size:12px!important;left:16px!important;bottom:16px!important}
+[id]{scroll-margin-top:84px}
+.hdr{position:fixed;top:4px;left:0;right:0;z-index:55;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,72px);background:rgba(231,231,229,.94);color:#0F0F10;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.hdr .logo{font-size:22px;font-weight:800;letter-spacing:-.04em}
+.links{display:flex;gap:30px;font-size:16px;font-weight:600}
+.links a:hover{opacity:.55}
+.cta{background:var(--red);color:#fff;border-radius:999px;padding:12px 24px;font-weight:700}
+.menu-btn{display:none;font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:999px;width:48px;height:48px;padding:0;justify-content:center;cursor:pointer}
+@media (max-width:760px){.links{display:none}.menu-btn{display:inline-flex;align-items:center}}
+@keyframes hdr{from{background-color:rgba(231,231,229,0);color:#fff;-webkit-backdrop-filter:blur(0);backdrop-filter:blur(0)}to{background-color:rgba(231,231,229,.94);color:#0F0F10;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}}
+@supports (animation-timeline:scroll()){.hdr{animation:hdr linear both;animation-timeline:scroll(root);animation-range:70vh 95vh}}
+.ovl{position:fixed;inset:0;z-index:80;background:var(--blue);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:24px;padding:20px clamp(20px,5vw,72px) 32px;overflow:auto;animation:ovl .35s cubic-bezier(.2,.7,.2,1) both}
+@keyframes ovl{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:none}}
+.ovl a.big-l{display:flex;gap:18px;align-items:baseline;font-size:clamp(52px,15vw,120px);font-weight:800;letter-spacing:-.055em;line-height:1.02;color:#fff}
+.ovl a.big-l small{font-size:15px;letter-spacing:0;font-weight:600;opacity:.7}
+.ovl a.big-l:hover{color:#0F0F10}
+.thumb{flex:0 0 auto;width:clamp(120px,18vw,260px);aspect-ratio:16/10;border-radius:6px;overflow:hidden;position:relative;background:#0F0F10}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.kb{position:absolute;inset:0;animation:kb 5s ease-out forwards}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08) translate(-1%,-1%)}}
+@media (prefers-reduced-motion:reduce){.kb{animation:none}}
+.in{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.in1{animation-delay:.05s}.in2{animation-delay:.18s}.in3{animation-delay:.34s}
+.intro{position:fixed;inset:0;z-index:300;background:#0F0F10;color:#F7F4EE;overflow:hidden;animation:infade .9s ease 4.0s forwards,inhide 0s linear 4.95s forwards}
+.intro .iv{position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 50%,rgba(214,40,40,.16),transparent 70%);animation:inpulse 4s ease-in-out both}
+.intro .ib{position:absolute;left:0;right:0;height:11vh;background:#000;z-index:2}
+.intro .ibt{top:0;animation:inbar 1s cubic-bezier(.7,0,.2,1) both}.intro .ibb{bottom:0;animation:inbar 1s cubic-bezier(.7,0,.2,1) both}
+.intro .iwd{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(44px,10vw,170px);font-weight:800;letter-spacing:-.05em;line-height:1;text-align:center;opacity:0;animation:inw .62s cubic-bezier(.2,.7,.2,1) both;padding:0 4vw}
+.intro .iwd i{font-style:normal;color:var(--red)}
+.intro .ilg{animation:inlogo 1.2s cubic-bezier(.2,.7,.2,1) both;font-size:clamp(40px,8vw,130px)}
+.intro .ipg{position:absolute;left:0;bottom:11vh;height:3px;background:var(--red);width:100%;transform-origin:left;animation:ingrow 4s linear both;z-index:3}
+@keyframes inw{0%{opacity:0;transform:scale(1.14);filter:blur(10px);letter-spacing:.04em}22%{opacity:1;transform:scale(1);filter:blur(0);letter-spacing:-.05em}78%{opacity:1;transform:scale(.99);filter:blur(0)}100%{opacity:0;transform:scale(.96);filter:blur(6px)}}
+@keyframes inlogo{0%{opacity:0;transform:scale(1.08);filter:blur(8px)}35%{opacity:1;transform:scale(1);filter:blur(0)}100%{opacity:1;transform:scale(.97)}}
+@keyframes inpulse{0%{opacity:0;transform:scale(.8)}100%{opacity:1;transform:scale(1.2)}}
+@keyframes inbar{from{transform:scaleY(1.6)}to{transform:scaleY(1)}}
+@keyframes ingrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes infade{to{opacity:0}}
+@keyframes inhide{to{visibility:hidden}}
+.intro .w0{animation-delay:0.35s}
+.intro .w1{animation-delay:0.85s}
+.intro .w2{animation-delay:1.35s}
+.intro .w3{animation-delay:1.85s}
+.intro .w4{animation-delay:2.35s}
+.intro .wl{animation-delay:2.95s}
+.in1{animation-delay:4.2s!important}.in2{animation-delay:4.35s!important}.in3{animation-delay:4.55s!important}
+@media (prefers-reduced-motion:reduce){.intro{display:none}.in1,.in2,.in3{animation-delay:0s!important}}
+
+@keyframes rise{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:none}}
+.hola{transition:color .4s}
+.hola:hover{color:var(--red)}
+@supports (animation-timeline:view()){.row,.scroller>a{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}}
+@media (prefers-reduced-motion:reduce){.in,.row,.scroller>a{animation:none!important}}
+a:focus-visible,button:focus-visible{outline:3px solid #0F0F10;outline-offset:3px;box-shadow:0 0 0 6px #fff;border-radius:4px}
+.ovl a:focus-visible,.ovl button:focus-visible,footer a:focus-visible,#contacto a:focus-visible,#top a:focus-visible{outline-color:#fff;box-shadow:0 0 0 6px #0F0F10}
+.skip{position:fixed;left:12px;top:-80px;z-index:200;background:#0F0F10;color:#fff;padding:12px 20px;border-radius:999px;font-weight:700}
+.skip:focus{top:12px}
+#contacto a[href^="tel"]{display:inline-block;padding:12px 0}
+.links a{display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
+.thumb{flex:0 1 auto;min-width:0;max-width:100%;width:clamp(120px,20vw,300px)}
+.mq-btn{font:inherit;font-weight:600;font-size:15px;color:#0F0F10;background:transparent;border:1.5px solid #0F0F10;border-radius:999px;padding:10px 18px;min-height:44px;cursor:pointer;margin:0 clamp(20px,5vw,72px) 20px;display:flex}
+.mq-btn:hover{background:#0F0F10;color:#E7E7E5}
+section[aria-label="Clientes"]:hover .marq{animation-play-state:paused}
+.itx{color:#fff;box-shadow:inset 0 -.14em 0 var(--red)}
+.ph span{background:rgba(0,0,0,.78)!important}
+@media (prefers-reduced-motion:reduce){.ovl{animation:none}}
+.wk{margin-bottom:72px;color:#F7F4EE}
+.wk-meta{display:flex;justify-content:space-between;gap:16px;font-size:15px;font-weight:600;padding-bottom:14px;color:rgba(247,244,238,.78)}
+.wk .clip{border-radius:6px}
+.wk-n{margin-top:18px;font-weight:800;letter-spacing:-.045em;line-height:1}
+.wk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+@media (max-width:760px){.wk-grid{grid-template-columns:1fr}}
+.wk-btn{display:inline-block;border:1px solid #F7F4EE;border-radius:999px;padding:16px 30px;font-size:16px;font-weight:600;color:#F7F4EE}
+.wk-btn:hover{background:#F7F4EE;color:#0F0F10}
+#trabajo a:focus-visible{outline-color:#fff;box-shadow:0 0 0 6px #0F0F10}
+.bg{position:absolute;inset:0;opacity:0;overflow:hidden;animation:bgfade 12s linear infinite}
+.bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:bgzoom 12s cubic-bezier(.3,0,.6,1) infinite}
+.bg2 img{transform-origin:50% 0;object-position:50% 0!important}
+.bg2,.bg2 img{animation-delay:4s}.bg3,.bg3 img{animation-delay:8s}
+@keyframes bgfade{0%{opacity:0}3%{opacity:1}33%{opacity:1}36.5%{opacity:0}100%{opacity:0}}
+@keyframes bgzoom{0%{transform:scale(1.02)}37%{transform:scale(1.16) translate(-1.2%,-.8%)}100%{transform:scale(1.16)}}
+@media (prefers-reduced-motion:reduce){.bg,.bg img{animation:none}.bg1{opacity:1}}
+.logo-ph{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:200px;height:72px;border:1.5px dashed #6b6b66;border-radius:8px;font-size:14px;font-weight:600;letter-spacing:0;color:#44443f;white-space:normal;text-align:center;padding:0 12px}
+.lg{flex:0 0 auto;width:180px;height:64px;fill:#0F0F10;opacity:.85}
+.split{display:grid;grid-template-columns:minmax(180px,3fr) 9fr;gap:40px clamp(24px,4vw,72px);max-width:1760px;margin:0 auto}
+.rail{display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.lbl{font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.sts{display:flex;flex-direction:column;gap:24px}
+.st{border-left:1px solid #0F0F10;padding-left:20px}
+.stn{font-size:clamp(44px,4.4vw,76px);font-weight:800;letter-spacing:-.05em;line-height:1}
+.stt{font-size:16px;color:#44443f;margin-top:6px;max-width:200px}
+.stmt{margin:0 0 clamp(40px,5vw,88px);font-weight:800;font-size:clamp(32px,3.6vw,68px);line-height:1.08;letter-spacing:-.045em;max-width:22em}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{display:flex;flex-direction:column;justify-content:space-between;gap:48px;background:#fff;border-radius:24px;padding:clamp(24px,2.2vw,40px);min-height:clamp(240px,21vw,380px)}
+.card .ct{margin:0;font-size:clamp(22px,1.9vw,34px);font-weight:800;letter-spacing:-.04em;line-height:1.05}
+.card .cd{margin:12px 0 0;font-size:clamp(16px,1.15vw,19px);line-height:1.45;color:#44443f;max-width:30em}
+.card:hover .cd{color:#E7E7E5}
+.icard{padding:12px 12px clamp(24px,2.2vw,36px);gap:28px}
+.icard>div:last-child{padding:0 clamp(12px,1.2vw,24px)}
+.icard .im{aspect-ratio:16/10;border-radius:14px;overflow:hidden;position:relative;background:#0F0F10}
+.icard .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media (max-width:900px){.split{grid-template-columns:1fr}.rail{flex-direction:row;flex-wrap:wrap}.sts{flex-direction:row;flex-wrap:wrap;gap:24px 40px}.cards{grid-template-columns:1fr}}
+.split-bg{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}
+.pn{position:relative;overflow:hidden}
+.pr{border-left:1px solid rgba(255,255,255,.35)}
+.hk{font-size:clamp(14px,1.1vw,18px);font-weight:600;letter-spacing:.02em}
+.hl{display:inline-flex;align-items:center;gap:8px;font-size:clamp(15px,1.2vw,19px);font-weight:700;border-bottom:2px solid #fff;padding:12px 0 4px}
+.hl:hover{opacity:.7}
+@media (max-width:760px){.split-bg{grid-template-columns:1fr;grid-template-rows:1fr 1fr}.pr{border-left:0;border-top:1px solid rgba(255,255,255,.35)}}
+.icb{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;color:#fff;background:rgba(15,15,16,.55);border:1px solid rgba(255,255,255,.6);cursor:pointer;padding:0}
+.icb svg{width:20px;height:20px}
+.icb:hover{background:#fff;color:#0F0F10}
+.ctop{display:flex;justify-content:space-between;align-items:flex-start}
+.ic{width:clamp(36px,3vw,52px);height:clamp(36px,3vw,52px);flex:0 0 auto}
+.ic.sm{width:24px;height:24px}
+.row:hover .ic{color:#F7F4EE}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+h1,h2,h3,.stmt,.ttl,.ct{text-wrap:balance}
+p,.cd,.cap{text-wrap:pretty}
+.it,.num{white-space:nowrap}
+a,button{transition:color .35s ease,background-color .35s ease,border-color .35s ease,opacity .35s ease,transform .45s cubic-bezier(.2,.7,.2,1)}
+.row{transition:background-color .45s cubic-bezier(.2,.7,.2,1),color .45s ease}
+.card:hover{transform:translateY(-6px)}
+.hl{background:linear-gradient(#fff,#fff) 0 100%/0 2px no-repeat;border-bottom:0;transition:background-size .5s cubic-bezier(.2,.7,.2,1)}
+.hl:hover{opacity:1;background-size:100% 2px}
+.hl{padding-bottom:6px}
+.pill-w{display:inline-flex;align-items:center;gap:12px;font:inherit;font-size:18px;font-weight:600;background:#fff;color:#0F0F10;border:0;border-radius:999px;padding:20px 32px;cursor:pointer}
+.pill-w:hover{background:#0F0F10;color:#fff}
+.cpanel{display:grid;transition:grid-template-rows .7s cubic-bezier(.2,.7,.2,1),visibility 0s linear .7s;margin-top:0}
+.cpanel .cin{overflow:hidden;min-height:0;opacity:0;transform:translateY(16px);transition:opacity .6s ease .1s,transform .7s cubic-bezier(.2,.7,.2,1) .1s}
+.cpanel[style*="1fr"]{transition:grid-template-rows .7s cubic-bezier(.2,.7,.2,1),visibility 0s}
+.cpanel[style*="1fr"] .cin{opacity:1;transform:none}
+.cform{padding-top:56px;max-width:1100px}
+.fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 28px}
+.fl{display:flex;flex-direction:column;gap:8px;font-size:15px;font-weight:600}
+.fl.full{grid-column:1/-1}
+.fl input,.fl textarea{font:inherit;font-size:17px;font-weight:400;color:#0F0F10;background:#fff;border:2px solid #fff;border-radius:14px;padding:15px 16px;resize:vertical;transition:border-color .3s,box-shadow .3s}
+.fl input:focus,.fl textarea:focus{outline:3px solid #0F0F10;outline-offset:2px;box-shadow:0 0 0 6px #fff}
+.fact{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-top:32px}
+.fsend{font:inherit;font-size:18px;font-weight:600;background:#0F0F10;color:#fff;border:0;border-radius:999px;padding:20px 38px;cursor:pointer}
+.fnote{font-size:15px}
+.fok{padding-top:56px;max-width:700px}
+.fokt{font-size:clamp(32px,4vw,64px);font-weight:800;letter-spacing:-.045em;line-height:1}
+.fok p{font-size:19px;margin:16px 0 0}
+@media (max-width:700px){.fgrid{grid-template-columns:1fr}}
+@supports (animation-timeline:view()){
+.stmt,.lbl,.st,.wk,#trabajo h2,#contacto h2,.wk-btn,.hk{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 40%}
+.wk .ph img,.icard .im img,.thumb img{animation:imgz linear both;animation-timeline:view();animation-range:entry 0% exit 60%}
+@keyframes rv{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:none}}
+@keyframes imgz{from{transform:scale(1.14)}to{transform:scale(1)}}
+}
+@media (prefers-reduced-motion:reduce){.stmt,.lbl,.st,.wk,#trabajo h2,#contacto h2,.wk-btn,.wk .ph img,.icard .im img,.thumb img{animation:none!important}.card:hover{transform:none}.cpanel,.cpanel .cin{transition:none}}
+.fl select{font:inherit;font-size:17px;font-weight:400;color:#0F0F10;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230F0F10' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 16px center;border:2px solid #fff;border-radius:14px;padding:15px 48px 15px 16px;-webkit-appearance:none;appearance:none;cursor:pointer}
+.fl select:focus{outline:3px solid #0F0F10;outline-offset:2px;box-shadow:0 0 0 6px #fff}
+.fl ::placeholder{color:#6b6b66;opacity:1}
+.mdl{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:clamp(12px,3vw,40px);background:rgba(15,15,16,.7);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:opacity .45s ease,visibility 0s linear .45s;overflow:auto}
+.mdl[style*="opacity:1"]{transition:opacity .45s ease,visibility 0s}
+.mpn{width:min(100%,860px);max-height:100%;overflow:auto;background:var(--red);color:#fff;border-radius:28px;padding:clamp(24px,3.2vw,48px);transform:translateY(32px) scale(.98);transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.mdl[style*="opacity:1"] .mpn{transform:none}
+.icb,.icb2{flex:none;aspect-ratio:1/1}
+.mhd{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.mtt{margin:0;font-weight:800;font-size:clamp(32px,4.4vw,64px);line-height:1;letter-spacing:-.045em}
+.mpn .cform{padding-top:32px;max-width:none}
+.mpn .fok{padding-top:32px}
+@media (prefers-reduced-motion:reduce){.mdl,.mpn{transition:none}}
+.ft{background:#0F0F10;color:#F7F4EE;padding:40px clamp(20px,5vw,72px) 28px}
+.ftr{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;justify-content:space-between;max-width:1760px;margin:0 auto}
+.ftl{font-size:22px;font-weight:800;letter-spacing:-.04em}
+.ftn{display:flex;flex-wrap:wrap;gap:4px 28px;font-size:16px;font-weight:600}
+.ftn a{display:inline-flex;align-items:center;min-height:44px;opacity:.85}
+.ftn a:hover{opacity:1}
+.fts{display:flex;gap:10px}
+.soc{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid rgba(247,244,238,.4);color:#F7F4EE}
+.soc svg{width:20px;height:20px}
+.soc:hover{background:#F7F4EE;color:#0F0F10;transform:translateY(-3px)}
+.ftb{display:flex;flex-wrap:wrap;gap:8px 40px;justify-content:space-between;max-width:1760px;margin:28px auto 0;padding-top:20px;border-top:1px solid rgba(231,231,229,.22);font-size:14px;font-weight:500;color:rgba(247,244,238,.78)}
+.ftb a{display:inline-block;padding:8px 0;border-bottom:1px solid currentColor}
+.case{width:100%;text-align:left;font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.wk .clip,.wk .ph,.wk-meta{display:block}
+.wk-meta{display:flex}
+.wk .ph::after{background:linear-gradient(180deg,rgba(0,0,0,0) 25%,rgba(0,0,0,.78))}
+.wk .ph img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.wk:hover .ph img{transform:scale(1.05)}
+.mt{position:absolute;z-index:2;left:clamp(16px,2vw,32px);bottom:clamp(16px,2vw,28px);right:16px;color:#fff;display:block}
+.mt::before{content:"";display:block;width:56px;height:5px;background:var(--red);margin-bottom:14px}
+.mn{display:block;font-weight:900;letter-spacing:-.055em;line-height:.9;font-size:clamp(52px,6vw,96px);font-variant-numeric:tabular-nums}
+.mn.big{font-size:clamp(72px,10vw,176px)}
+.mt em{display:block;font-style:normal;font-size:clamp(15px,1.2vw,19px);font-weight:600;margin-top:8px;max-width:22em}
+.ex{position:absolute;z-index:2;top:16px;right:16px;width:48px;height:48px;border-radius:50%;background:#fff;color:#0F0F10;display:flex;align-items:center;justify-content:center;transition:transform .5s cubic-bezier(.2,.7,.2,1),background-color .3s,color .3s}
+.ex svg{width:22px;height:22px}
+.wk:hover .ex{transform:rotate(90deg);background:var(--red);color:#fff}
+.gpn{background:#0F0F10;width:min(100%,1180px)}
+.gtag{font-size:15px;font-weight:600;color:rgba(247,244,238,.78);margin-bottom:10px}
+.gm{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 20px;margin:24px 0 28px;padding-top:20px;border-top:1px solid rgba(247,244,238,.25)}
+.gm .mn{display:inline-block;color:#fff}
+.gm span{font-size:clamp(16px,1.4vw,20px);font-weight:600;color:rgba(247,244,238,.85)}
+.gg{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:repeat(2,clamp(120px,15vw,240px));gap:12px}
+.gt{position:relative;overflow:hidden;border-radius:14px;background:#1b1b1d}
+.gt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gt:hover img{transform:scale(1.06)}
+.gt.g1{grid-row:1/3}
+.gt.g4{grid-column:2/4}
+.gf{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;margin-top:28px}
+.gf .fnote{color:rgba(247,244,238,.78)}
+@media (max-width:700px){.gg{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:clamp(120px,32vw,200px)}.gt.g1{grid-column:1/3;grid-row:span 2;height:auto}.gt.g4{grid-column:auto}}
+.wk .ph::after{display:none}
+.wk-row{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:18px}
+.wk-row .wk-n{margin-top:0}
+.wk-m{display:flex;align-items:baseline;gap:12px}
+.wk-m strong{font-weight:900;letter-spacing:-.05em;line-height:1;font-size:clamp(36px,3.6vw,64px)}
+.wk-m em{font-style:normal;font-size:16px;font-weight:500;color:rgba(247,244,238,.78)}
+.wk:hover .ph img{transform:scale(1.03)}
+.bd{position:absolute;z-index:2;right:clamp(14px,2vw,32px);bottom:clamp(14px,2vw,32px);width:clamp(104px,9vw,148px);aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;border:4px solid #fff;box-shadow:0 12px 32px rgba(0,0,0,.35);transform:rotate(-8deg);transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.bd-r{background:var(--red)}
+.bd-b{background:var(--blue)}
+.bd-big{width:clamp(130px,13vw,200px)}
+.bd strong{font-weight:900;letter-spacing:-.05em;line-height:1;font-size:clamp(22px,2.1vw,34px)}
+.bd-big strong{font-size:clamp(34px,3.6vw,58px)}
+.bd em{font-style:normal;font-weight:700;font-size:clamp(12px,1vw,15px);line-height:1.1;margin-top:4px;max-width:80%}
+.wk .bd,.wk .bd-big{left:clamp(16px,2vw,32px);right:auto;bottom:clamp(16px,2vw,32px);width:auto;aspect-ratio:auto;border-radius:16px;padding:16px 22px;align-items:flex-start;text-align:left;background:rgba(15,15,16,.55);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.38);box-shadow:none;transform:none}
+.wk .bd strong{font-weight:700;letter-spacing:-.04em;font-size:clamp(28px,2.6vw,44px)}
+.wk .bd-big strong{font-size:clamp(36px,3.6vw,60px)}
+.wk .bd em{text-transform:uppercase;letter-spacing:.09em;font-weight:600;font-size:12px;margin-top:8px;max-width:none;opacity:.92}
+.wk:hover .bd{transform:translateY(-4px)}
+@media (prefers-reduced-motion:reduce){.bd{transition:none}}
+.ar{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1px solid rgba(247,244,238,.45);color:#F7F4EE;transition:background-color .4s ease,color .4s ease,border-color .4s ease,transform .5s cubic-bezier(.2,.7,.2,1)}
+.ar svg{width:22px;height:22px}
+.wk:hover .ar{background:#F7F4EE;color:#0F0F10;border-color:#F7F4EE;transform:translate(3px,-3px)}
+.wk-st{padding:100px clamp(20px,5vw,72px) 110px}
+@supports (animation-timeline:view()) and (not (prefers-reduced-motion:reduce)){
+.wk-pin{--pad:clamp(20px,5vw,72px);--gap:clamp(12px,1.6vw,24px);--cw:clamp(290px,62vw,1040px);height:380vh;view-timeline-name:--wkp;view-timeline-axis:block;overflow-x:clip}
+@media (max-width:700px){.wk-pin{--cw:82vw;height:320vh}}
+@media (max-width:700px){.wk-st .wk-track .wk .ph{height:min(96vw,50vh)!important}.wk-st .wk-n{font-size:22px!important}.wk-st .wk-row{margin-top:14px}.wk-st .ar{width:44px;height:44px;flex:none}}
+.wk-st{position:sticky;top:0;height:100vh;box-sizing:border-box;padding-top:92px;padding-bottom:20px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.wk-st>div:first-child{margin-bottom:28px!important}
+.wk-st .wk-ctl{display:none}
+.wk-track{overflow:visible;scroll-snap-type:none;width:max-content;margin:0;padding:0;animation:wkslide linear both;animation-timeline:--wkp;animation-range:contain 0% contain 100%}
+.wk-track .wk{flex:0 0 var(--cw)}
+.wk-st .wk-track .wk .ph{height:min(40vw,46vh)!important}
+@media (max-width:700px){.wk-st .wk-track .wk .ph{height:min(100vw,54vh)!important}}
+.wk-cta{margin-top:22px!important}
+}
+@keyframes wkslide{to{transform:translateX(calc(-1*(5*var(--cw) + 4*var(--gap) - (100vw - 2*var(--pad)))))}}
+.wk-ctl{display:flex;gap:10px}
+.icb2{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;border:1px solid rgba(247,244,238,.45);background:transparent;color:#F7F4EE;cursor:pointer;padding:0}
+.icb2 svg{width:22px;height:22px}
+.icb2:hover{background:#F7F4EE;color:#0F0F10;border-color:#F7F4EE}
+.wk-track{display:flex;gap:clamp(12px,1.6vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;margin:0 calc(-1*clamp(20px,5vw,72px));padding:0 clamp(20px,5vw,72px) 8px;scroll-padding-left:clamp(20px,5vw,72px);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.wk-track::-webkit-scrollbar{display:none}
+.wk-track .wk{flex:0 0 clamp(290px,62vw,1040px);scroll-snap-align:start;margin-bottom:0;animation:none!important}
+.wk-track .ph{height:clamp(300px,40vw,660px)!important}
+.wk-track:focus-visible{outline:3px solid #fff;outline-offset:6px;border-radius:6px}
+@media (max-width:700px){.wk-track .wk{flex-basis:82vw}}
+@media (prefers-reduced-motion:reduce){.wk-track{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+
+
+
+<div style="--blue:#1F3FB0;--red:#D62828;background:#E7E7E5;color:#0F0F10;font-family:'Archivo',system-ui,sans-serif">
+
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="intro" aria-hidden="true"><div class="iv"></div><div class="ib ibt"></div><div class="ib ibb"></div><div class="iwd w0">Eventos<i>.</i></div><div class="iwd w1">Activaciones<i>.</i></div><div class="iwd w2">Marca<i>.</i></div><div class="iwd w3">Experiencias<i>.</i></div><div class="iwd w4">Conexión<i>.</i></div><div class="iwd ilg wl">Varria<i>.</i>Group</div><div class="ipg"></div></div>
+<div class="prog" aria-hidden="true"></div>
+
+<header class="hdr">
+  <a href="#top" class="logo">Varria<span style="color:var(--red)">.</span>Group</a>
+  <nav class="links" aria-label="Principal">
+    <a href="#trabajo">Trabajo.</a>
+    <a href="#servicios">Servicios.</a>
+    <a href="#nosotros">Nosotros.</a>
+    <a href="#contacto">Contacto.</a>
+  </nav>
+  <div style="display:flex;gap:10px;align-items:center">
+    <a class="pill cta" href="#contacto">Hablemos</a>
+    <button class="menu-btn" type="button" data-act="openMenu" aria-label="Abrir menú" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</header>
+<div id="ovlw" style="display:none">
+  <div class="ovl" role="dialog" aria-modal="true" aria-label="Menú principal" data-key="ovlKey">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:22px;font-weight:800;letter-spacing:-.04em">Varria.Group</span>
+      <button type="button" id="closebtn" data-act="closeMenu" aria-label="Cerrar menú" style="display:inline-flex;align-items:center;justify-content:center;color:#fff;background:transparent;border:1px solid #fff;border-radius:999px;width:48px;height:48px;padding:0;cursor:pointer"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <nav aria-label="Menú">
+      <a class="big-l" href="#trabajo" data-act="closeMenu"><small>01</small>Trabajo.</a>
+      <a class="big-l" href="#servicios" data-act="closeMenu"><small>02</small>Servicios.</a>
+      <a class="big-l" href="#nosotros" data-act="closeMenu"><small>03</small>Nosotros.</a>
+      <a class="big-l" href="#contacto" data-act="closeMenu"><small>04</small>Contacto.</a>
+    </nav>
+    <div style="font-size:17px;line-height:1.6;opacity:.9"><a href="tel:+573112337634">311 233 7634</a></div>
+  </div>
+</div>
+
+<main id="main">
+<!-- HERO CON VIDEO DE FONDO -->
+<section id="top" style="position:relative;box-sizing:border-box;min-height:100vh;min-height:100svh;color:#fff;background:#0F0F10;overflow:hidden;display:flex;flex-direction:column;justify-content:center">
+  <div aria-hidden="true" class="split-bg">
+    <div class="pn pl">
+      <div class="bg bg1" style="animation-play-state:running"><img src="assets/hero-1.jpg" alt="" style="object-position:50% 55%;animation-play-state:running"></div>
+      <div class="bg bg2" style="animation-play-state:running"><img src="assets/hero-2.jpg" alt="" style="height:130%;bottom:auto;transform-origin:50% 0;object-position:50% 0%;animation-play-state:running"></div>
+      <div class="bg bg3" style="animation-play-state:running"><img src="assets/hero-3.jpg" alt="" style="object-position:50% 85%;animation-play-state:running"></div>
+    </div>
+    <div class="pn pr">
+      <div class="bg bg1" style="animation-play-state:running"><img src="assets/hero-2.jpg" alt="" style="height:130%;bottom:auto;transform-origin:50% 0;object-position:50% 0%;animation-play-state:running"></div>
+      <div class="bg bg2" style="animation-play-state:running"><img src="assets/hero-3.jpg" alt="" style="object-position:50% 85%;animation-play-state:running"></div>
+      <div class="bg bg3" style="animation-play-state:running"><img src="assets/hero-1.jpg" alt="" style="object-position:50% 55%;animation-play-state:running"></div>
+    </div>
+  </div>
+  <div class="shade" aria-hidden="true"></div>
+  <div class="heroc" style="position:relative;z-index:2;text-align:center;padding:120px clamp(20px,5vw,72px)">
+    <div class="in in1 hk">Eventos y activaciones para grandes empresas</div>
+    <h1 class="in in2" style="margin:18px auto 22px;max-width:11em">Experiencias que <span class="it itx">venden</span> y <span class="it itx">conectan</span>.</h1>
+    <a class="in in3 hl" href="#trabajo">Ver el trabajo <span aria-hidden="true">↗</span></a>
+  </div>
+  <div style="position:absolute;z-index:3;left:clamp(20px,5vw,72px);right:clamp(20px,5vw,72px);bottom:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:14px;font-weight:600">
+    <span>Bogotá · México</span>
+    <button type="button" class="icb" data-act="toggle" aria-pressed="false" aria-label="Pausar fondo" title="Pausar fondo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg></button>
+  </div>
+</section>
+
+<!-- MAGNITUD -->
+<section aria-label="Cifras de impacto" style="border-bottom:1px solid #0F0F10;overflow:hidden">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin-left:-1px">
+    <div style="padding:52px clamp(20px,3vw,44px) 48px;border-left:1px solid #0F0F10">
+      <div class="big" style="color:var(--blue)">1.200</div>
+      <div class="cap">asistentes en un solo summit. AWS, 2023.</div>
+    </div>
+    <div style="padding:52px clamp(20px,3vw,44px) 48px;border-left:1px solid #0F0F10">
+      <div class="big" style="color:#0F0F10">3.000+</div>
+      <div class="cap">impactos por edición en la Rendición de Cuentas de la Superintendencia Financiera.</div>
+    </div>
+    <div style="padding:52px clamp(20px,3vw,44px) 48px;border-left:1px solid #0F0F10">
+      <div class="big" style="color:var(--red)"><span class="sr">más del 70 %</span><span aria-hidden="true" class="cnt pct" style="--n:70"></span></div>
+      <div class="cap">en ventas con las activaciones de Fujifilm en puntos de venta.</div>
+    </div>
+    <div style="padding:52px clamp(20px,3vw,44px) 48px;border-left:1px solid #0F0F10">
+      <div class="big" style="color:var(--blue)"><span class="sr">más de 8</span><span aria-hidden="true" class="cnt plus" style="--n:8"></span></div>
+      <div class="cap">años seguidos con la Superintendencia Financiera, sin una sola interrupción.</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:90px clamp(20px,5vw,72px)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px 80px;align-items:start">
+    <h2 style="margin:0;font-weight:500;font-size:clamp(40px,5.4vw,84px);line-height:1;letter-spacing:-.04em"><span class="w" style="--i:0">Creamos</span> <span class="w" style="--i:1">experiencias</span> <span class="w" style="--i:2">que</span> <span class="w" style="--i:3">importan</span> <span class="w" style="--i:4">a</span> <span class="w" style="--i:5">las</span> <span class="w" style="--i:6">personas.</span></h2>
+    <div>
+      <p style="margin:0 0 40px;font-size:clamp(18px,1.5vw,22px);line-height:1.5;color:#44443f;max-width:520px">Cualquiera puede armar un evento. Lo difícil es que conecte con la gente y mueva el negocio. Con 15 años y más de 500 experiencias, lo hacemos con criterio, equipo propio y resultados que se miden.</p>
+      <div style="display:flex;flex-direction:column;gap:6px;font-size:clamp(22px,2.2vw,32px);font-weight:500;letter-spacing:-.025em">
+        <a class="lnk" href="#trabajo">Ver el trabajo.</a>
+        <a class="lnk" href="#servicios">Descubrir los servicios.</a>
+        <a class="lnk" href="#nosotros">Conocer a Varria.</a>
+        <a class="lnk" href="#contacto">Cotizar un evento.</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTES -->
+<section aria-label="Clientes" style="border-top:1px solid #0F0F10;border-bottom:1px solid #0F0F10;overflow:hidden;padding:40px 0">
+  <div class="marq" style="font-size:clamp(24px,2.4vw,34px);font-weight:500;letter-spacing:-.03em;white-space:nowrap">
+    <div style="display:flex;gap:72px;padding-right:72px"><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="Amazon Web Services"><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/></svg><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="Fujifilm"><path d="M18.288 10v3.129c0 .204.096.313.3.313h1.034v.352c0 .04-.028.068-.068.068h-1.672c-.518 0-.6-.284-.6-.544v-3.1c0-.148.056-.216.232-.216h.774m-1.916 0v3.656c0 .164-.068.204-.204.204h-.788v-3.655c0-.125.04-.205.216-.205h.776M0 10.532c0-.3 0-.53.49-.53h2.12v.366c0 .028-.012.054-.054.054H1.28c-.162 0-.244.083-.244.26v.979h1.496v.393c0 .04-.028.054-.056.054h-1.44v1.55c0 .15-.082.204-.246.204H0v-3.33m4.148-.531v2.95c0 .26.04.434.216.53.232.136.64.136.884 0 .164-.096.232-.244.232-.53v-2.76c0-.122.04-.19.218-.19h.774v2.853c0 .667-.42.94-.788 1.035a3.592 3.592 0 0 1-1.7 0c-.558-.164-.816-.49-.816-1.035v-2.663c0-.122.04-.204.19-.204h.79M22.872 10c-.19 0-.314.094-.354.272l-.626 2.663h-.014L21.212 10h-.884c-.176 0-.23.08-.23.23v3.644h.38c.054 0 .08-.026.08-.094v-3.06h.056l.802 3.14h.53c.204 0 .272-.08.328-.272l.72-2.868h.054v3.14h.708c.176 0 .244-.069.244-.23V10h-1.128m-11.708 2.093h-.992v1.767h.788c.136 0 .204-.04.204-.205v-1.562m-.054-.747c.04-.028.054-.056.054-.11V10h-.776c-.176 0-.216.08-.216.204v1.875l.938-.733m-3.4 2.216c.436-.055.572-.314.572-.695v-2.663c0-.164.08-.204.19-.204h.788v2.513c0 .612-.136.927-.49 1.198-.19.136-.516.3-1.25.3-.408 0-.6-.028-.626-.028-.04-.014-.054-.028-.054-.056v-.326c.204-.014.584 0 .87-.04M12.674 10c-.49 0-.49.244-.49.53v.992c0 .028-.014.028-.014.04l-.68.532h.694v1.766h.788c.164 0 .244-.054.244-.204v-1.562h1.442c.028 0 .054-.014.054-.056v-.394h-1.496v-.98c0-.176.082-.256.26-.256h1.278c.04 0 .054-.028.054-.056V10h-2.134"/></svg><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="Toyota"><path d="M12 3.848C5.223 3.848 0 7.298 0 12c0 4.702 5.224 8.152 12 8.152S24 16.702 24 12c0-4.702-5.223-8.152-12-8.152zm7.334 3.839c0 1.08-1.725 1.913-4.488 2.246-.26-2.58-1.005-4.279-1.963-4.913 2.948.184 6.45 1.227 6.45 2.667zM12 16.401c-.96 0-1.746-1.5-1.808-4.389.577.047 1.18.072 1.808.072.628 0 1.23-.025 1.807-.072-.061 2.89-.847 4.389-1.807 4.389zm0-6.308c-.59 0-1.155-.019-1.69-.054.261-1.728.92-3.15 1.69-3.15.77 0 1.428 1.422 1.689 3.15-.535.034-1.099.054-1.689.054zm-.882-5.075c-.956.633-1.706 2.333-1.964 4.915C6.391 9.6 4.665 8.767 4.665 7.687c0-1.44 3.504-2.49 6.453-2.669zM2.037 11.68a5.265 5.265 0 011.048-3.164c.27 1.547 2.522 2.881 5.972 3.37V12c0 3.772.879 6.203 2.087 6.97-5.107-.321-9.107-3.48-9.107-7.29zm10.823 7.29c1.207-.767 2.087-3.198 2.087-6.97v-.115c3.447-.488 5.704-1.826 5.972-3.37a5.26 5.26 0 011.049 3.165c-.004 3.81-4.008 6.969-9.109 7.29z"/></svg><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="Samsung"><path d="M19.8166 10.2808l.0459 2.6934h-.023l-.7793-2.6934h-1.2837v3.3925h.8481l-.0458-2.785h.023l.8366 2.785h1.2264v-3.3925zm-16.149 0l-.6418 3.427h.9284l.4699-3.1175h.0229l.4585 3.1174h.9169l-.6304-3.4269zm5.1805 0l-.424 2.6132h-.023l-.424-2.6132H6.5788l-.0688 3.427h.8596l.023-3.0832h.0114l.573 3.0831h.8711l.5731-3.083h.023l.0228 3.083h.8596l-.0802-3.4269zm-7.2664 2.4527c.0343.0802.0229.1949.0114.2522-.0229.1146-.1031.2292-.3324.2292-.2177 0-.3438-.126-.3438-.3095v-.3323H0v.2636c0 .7679.6074.9971 1.2493.9971.6189 0 1.1346-.2178 1.2149-.7794.0458-.298.0114-.4928 0-.5616-.1605-.722-1.467-.9283-1.5588-1.3295-.0114-.0688-.0114-.1375 0-.1834.023-.1146.1032-.2292.3095-.2292.2063 0 .321.126.321.3095v.2063h.8595v-.2407c0-.745-.6762-.8596-1.1576-.8596-.6074 0-1.1117.2063-1.2034.7564-.023.149-.0344.2866.0114.4585.1376.7106 1.364.9169 1.5358 1.3524m11.152 0c.0343.0803.0228.1834.0114.2522-.023.1146-.1032.2292-.3324.2292-.2178 0-.3438-.126-.3438-.3095v-.3323h-.917v.2636c0 .7564.596.9857 1.2379.9857.6189 0 1.1232-.2063 1.2034-.7794.0459-.298.0115-.4814 0-.5616-.1375-.7106-1.4327-.9284-1.5243-1.318-.0115-.0688-.0115-.1376 0-.1835.0229-.1146.1031-.2292.3094-.2292.1948 0 .321.126.321.3095v.2063h.848v-.2407c0-.745-.6647-.8596-1.146-.8596-.6075 0-1.1004.1948-1.192.7564-.023.149-.023.2866.0114.4585.1376.7106 1.341.9054 1.513 1.3524m2.8882.4585c.2407 0 .3094-.1605.3323-.2522.0115-.0343.0115-.0917.0115-.126v-2.533h.871v2.4642c0 .0688 0 .1948-.0114.2292-.0573.6419-.5616.8482-1.192.8482-.6303 0-1.1346-.2063-1.192-.8482 0-.0344-.0114-.1604-.0114-.2292v-2.4642h.871v2.533c0 .0458 0 .0916.0115.126 0 .0917.0688.2522.3095.2522m7.1518-.0344c.2522 0 .3324-.1605.3553-.2522.0115-.0343.0115-.0917.0115-.126v-.4929h-.3553v-.5043H24v.917c0 .0687 0 .1145-.0115.2292-.0573.6303-.596.8481-1.2034.8481-.6075 0-1.1461-.2178-1.2034-.8481-.0115-.1147-.0115-.1605-.0115-.2293v-1.444c0-.0574.0115-.172.0115-.2293.0802-.6419.596-.8482 1.2034-.8482s1.1347.2063 1.2034.8482c.0115.1031.0115.2292.0115.2292v.1146h-.8596v-.1948s0-.0803-.0115-.1261c-.0114-.0802-.0802-.2521-.3438-.2521-.2521 0-.321.1604-.3438.2521-.0115.0458-.0115.1032-.0115.1605v1.5702c0 .0458 0 .0916.0115.126 0 .0917.0917.2522.3323.2522"/></svg><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="HP"><path d="M12.0069 24h-.3572l2.459-6.7453h3.3796c.5907 0 1.2364-.4533 1.4424-1.0166l2.6652-7.3085c.4396-1.1952-.2473-2.1706-1.525-2.1706h-4.6983l-3.929 10.798-2.2255 6.127C3.929 22.434 0 17.6806 0 12.007 0 6.498 3.7092 1.8546 8.7647.4396L6.4705 6.759 2.6514 17.2547h2.5415L8.4488 8.339h1.9095l-3.2558 8.9158H9.644l3.0223-8.3251c.4396-1.1952-.2473-2.1706-1.525-2.1706h-2.143l2.459-6.7453C11.636 0 11.8145 0 11.9931 0 18.6285 0 24 5.3715 24 12.007c.0137 6.6216-5.3578 11.993-11.9931 11.993zM19.2742 8.325h-1.9096l-2.6789 7.336h1.9096l2.6789-7.336z"/></svg><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="Siemens"><path d="M1.478 10.016c.24 0 .59.046 1.046.14v.726a2.465 2.465 0 0 0-.946-.213c-.41 0-.615.118-.615.354 0 .088.041.16.124.216.069.045.258.14.568.286.446.208.743.388.89.541.176.182.264.417.264.705 0 .415-.172.73-.516.949-.279.176-.64.264-1.085.264-.375 0-.753-.046-1.133-.139v-.755c.41.135.774.203 1.09.203.437 0 .655-.121.655-.362a.302.302 0 0 0-.095-.227c-.065-.065-.232-.155-.5-.27-.481-.208-.795-.384-.94-.53a.999.999 0 0 1-.284-.73c0-.377.137-.666.413-.864.272-.196.626-.294 1.064-.294zm21.19 0c.246 0 .565.04.956.123l.09.016v.727a2.471 2.471 0 0 0-.948-.213c-.409 0-.612.118-.612.354 0 .088.04.16.123.216.066.043.256.139.57.286.443.208.74.388.889.541.176.182.264.417.264.705 0 .415-.172.73-.514.949-.28.176-.643.264-1.087.264-.376 0-.754-.046-1.134-.139v-.755c.407.135.77.203 1.09.203.437 0 .655-.121.655-.362 0-.09-.03-.166-.092-.227-.066-.065-.233-.155-.503-.27-.48-.206-.793-.382-.94-.53a.997.997 0 0 1-.284-.732c0-.376.137-.664.413-.862.272-.196.627-.294 1.064-.294zm-12.674.066l.92 2.444.942-2.444h1.257v3.825h-.968v-2.708l-1.072 2.747h-.632l-1.052-2.747v2.708H8.67v-3.825zm-5.587 0v3.825H3.386v-3.825zm3.554 0v.692H6.327v.864H7.75v.63H6.327v.908h1.677v.73h-2.66v-3.824zm8.707 0v.692h-1.634v.864h1.422v.63h-1.422v.908h1.677v.73H14.05v-3.824zm1.898 0l1.255 2.56v-2.56h.719v3.825h-1.15l-1.288-2.595v2.595h-.72v-3.825z"/></svg><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="Avianca"><path d="M3.813 0s-2.326 2.052-2.51 6.367c-.205 4.716 2.324 9.47 10.654 10.076.026.005.055.005.08.008C7.806 11.534 4.955 5.241 3.812 0zm8.224 16.451a30.654 30.654 0 0 0 2.2 2.303H5.282c.12.278.53.472 1.463.527 5.59.332 6.38 4.719 14.381 4.719.702 0 1.14-.042 1.582-.125-3.16-.972-6-2.8-8.47-5.121h2.21c.917 0 1.325.076 1.58.191-.392-1.218-1.631-2.168-5.992-2.494z"/></svg><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="Renault"><path d="M17.463 11.99l-4.097-7.692-.924 1.707 3.213 5.985-5.483 10.283L4.69 11.99 11.096 0H9.27L2.882 11.99 9.269 24h1.807zm3.655 0L14.711 0h-1.807L6.517 11.99l4.117 7.712.904-1.707-3.193-6.005 5.463-10.263L19.29 11.99 12.904 24h1.807Z"/></svg><svg class="lg" viewBox="0 0 24 24" role="img" aria-label="Cisco"><path d="M16.331 18.171V17.06l-.022.01c-.25.121-.522.19-.801.203a1.186 1.186 0 01-.806-.237 1.038 1.038 0 01-.352-.498 1.21 1.21 0 01-.023-.667c.052-.225.178-.426.357-.569.16-.134.355-.218.562-.242a1.85 1.85 0 011.061.198l.024.013v-1.117l-.051-.014a2.862 2.862 0 00-1.011-.132 2.34 2.34 0 00-.903.206c-.287.132-.54.327-.739.571a2.221 2.221 0 00-.04 2.705c.295.378.709.645 1.175.756.491.12 1.006.102 1.487-.052l.082-.023M5.336 18.171V17.06l-.022.01c-.25.121-.522.19-.801.203a1.183 1.183 0 01-.806-.237 1.03 1.03 0 01-.351-.498 1.202 1.202 0 01-.024-.667c.052-.225.177-.426.357-.569.16-.134.355-.218.562-.242a1.85 1.85 0 011.061.198l.024.013v-1.117l-.051-.014a2.862 2.862 0 00-1.011-.132 2.344 2.344 0 00-.903.206 2.08 2.08 0 00-.74.571 2.224 2.224 0 00-.041 2.705 2.11 2.11 0 001.176.756c.491.12 1.005.102 1.487-.052l.083-.023M9.26 17.249l-.004.957.07.012c.22.041.441.069.664.085.195.019.391.022.587.012.187-.014.372-.049.551-.104.21-.06.405-.163.571-.305a1.16 1.16 0 00.333-.478 1.31 1.31 0 00-.007-.96 1.068 1.068 0 00-.298-.414 1.261 1.261 0 00-.438-.255l-.722-.268a.388.388 0 01-.197-.188.245.245 0 01.008-.219.382.382 0 01.154-.142.798.798 0 01.257-.074c.153-.022.308-.021.46.005.18.02.358.051.533.096l.038.008v-.883l-.069-.015a4.749 4.749 0 00-.543-.097 2.844 2.844 0 00-.714-.003c-.3.027-.585.143-.821.33-.16.126-.281.293-.351.484-.104.29-.105.608 0 .899.054.145.14.274.252.381.097.093.207.173.327.236.157.084.324.149.497.195.057.017.114.035.17.054l.085.031.024.01c.084.03.162.078.226.14.045.042.08.094.101.151a.325.325 0 01.001.161.339.339 0 01-.166.198.856.856 0 01-.275.086 2.032 2.032 0 01-.427.021 5.208 5.208 0 01-.557-.074 9.195 9.195 0 01-.287-.067l-.033-.006zm-2.475.995h1.05v-4.167h-1.05v4.167zm12.162-2.936a1.095 1.095 0 011.541.158 1.094 1.094 0 01-.157 1.541l-.017.014a1.096 1.096 0 01-1.367-1.713m-1.525.854a2.193 2.193 0 002.666 2.107 2.139 2.139 0 00.701-3.937 2.207 2.207 0 00-3.367 1.83M22.961 10.728a.52.52 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155M20.117 10.728a.522.522 0 001.041 0V8.139a.521.521 0 00-1.04 0v2.589M17.231 11.771a.521.521 0 001.039 0V6.17a.52.52 0 00-1.039 0v5.601M14.393 10.728a.521.521 0 001.04 0V8.139a.52.52 0 00-1.039 0v2.589M11.494 10.728a.522.522 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155M8.624 10.728a.52.52 0 001.039 0V8.139a.52.52 0 00-1.039 0v2.589M5.737 11.771a.52.52 0 001.039 0V6.17a.52.52 0 00-1.039 0v5.601M2.876 10.728a.522.522 0 001.04 0V8.139a.52.52 0 00-1.039 0v2.589M0 10.728a.521.521 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155"/></svg></div>
+    <div style="display:flex;gap:72px;padding-right:72px" aria-hidden="true"><svg class="lg" viewBox="0 0 24 24"><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/></svg><svg class="lg" viewBox="0 0 24 24"><path d="M18.288 10v3.129c0 .204.096.313.3.313h1.034v.352c0 .04-.028.068-.068.068h-1.672c-.518 0-.6-.284-.6-.544v-3.1c0-.148.056-.216.232-.216h.774m-1.916 0v3.656c0 .164-.068.204-.204.204h-.788v-3.655c0-.125.04-.205.216-.205h.776M0 10.532c0-.3 0-.53.49-.53h2.12v.366c0 .028-.012.054-.054.054H1.28c-.162 0-.244.083-.244.26v.979h1.496v.393c0 .04-.028.054-.056.054h-1.44v1.55c0 .15-.082.204-.246.204H0v-3.33m4.148-.531v2.95c0 .26.04.434.216.53.232.136.64.136.884 0 .164-.096.232-.244.232-.53v-2.76c0-.122.04-.19.218-.19h.774v2.853c0 .667-.42.94-.788 1.035a3.592 3.592 0 0 1-1.7 0c-.558-.164-.816-.49-.816-1.035v-2.663c0-.122.04-.204.19-.204h.79M22.872 10c-.19 0-.314.094-.354.272l-.626 2.663h-.014L21.212 10h-.884c-.176 0-.23.08-.23.23v3.644h.38c.054 0 .08-.026.08-.094v-3.06h.056l.802 3.14h.53c.204 0 .272-.08.328-.272l.72-2.868h.054v3.14h.708c.176 0 .244-.069.244-.23V10h-1.128m-11.708 2.093h-.992v1.767h.788c.136 0 .204-.04.204-.205v-1.562m-.054-.747c.04-.028.054-.056.054-.11V10h-.776c-.176 0-.216.08-.216.204v1.875l.938-.733m-3.4 2.216c.436-.055.572-.314.572-.695v-2.663c0-.164.08-.204.19-.204h.788v2.513c0 .612-.136.927-.49 1.198-.19.136-.516.3-1.25.3-.408 0-.6-.028-.626-.028-.04-.014-.054-.028-.054-.056v-.326c.204-.014.584 0 .87-.04M12.674 10c-.49 0-.49.244-.49.53v.992c0 .028-.014.028-.014.04l-.68.532h.694v1.766h.788c.164 0 .244-.054.244-.204v-1.562h1.442c.028 0 .054-.014.054-.056v-.394h-1.496v-.98c0-.176.082-.256.26-.256h1.278c.04 0 .054-.028.054-.056V10h-2.134"/></svg><svg class="lg" viewBox="0 0 24 24"><path d="M12 3.848C5.223 3.848 0 7.298 0 12c0 4.702 5.224 8.152 12 8.152S24 16.702 24 12c0-4.702-5.223-8.152-12-8.152zm7.334 3.839c0 1.08-1.725 1.913-4.488 2.246-.26-2.58-1.005-4.279-1.963-4.913 2.948.184 6.45 1.227 6.45 2.667zM12 16.401c-.96 0-1.746-1.5-1.808-4.389.577.047 1.18.072 1.808.072.628 0 1.23-.025 1.807-.072-.061 2.89-.847 4.389-1.807 4.389zm0-6.308c-.59 0-1.155-.019-1.69-.054.261-1.728.92-3.15 1.69-3.15.77 0 1.428 1.422 1.689 3.15-.535.034-1.099.054-1.689.054zm-.882-5.075c-.956.633-1.706 2.333-1.964 4.915C6.391 9.6 4.665 8.767 4.665 7.687c0-1.44 3.504-2.49 6.453-2.669zM2.037 11.68a5.265 5.265 0 011.048-3.164c.27 1.547 2.522 2.881 5.972 3.37V12c0 3.772.879 6.203 2.087 6.97-5.107-.321-9.107-3.48-9.107-7.29zm10.823 7.29c1.207-.767 2.087-3.198 2.087-6.97v-.115c3.447-.488 5.704-1.826 5.972-3.37a5.26 5.26 0 011.049 3.165c-.004 3.81-4.008 6.969-9.109 7.29z"/></svg><svg class="lg" viewBox="0 0 24 24"><path d="M19.8166 10.2808l.0459 2.6934h-.023l-.7793-2.6934h-1.2837v3.3925h.8481l-.0458-2.785h.023l.8366 2.785h1.2264v-3.3925zm-16.149 0l-.6418 3.427h.9284l.4699-3.1175h.0229l.4585 3.1174h.9169l-.6304-3.4269zm5.1805 0l-.424 2.6132h-.023l-.424-2.6132H6.5788l-.0688 3.427h.8596l.023-3.0832h.0114l.573 3.0831h.8711l.5731-3.083h.023l.0228 3.083h.8596l-.0802-3.4269zm-7.2664 2.4527c.0343.0802.0229.1949.0114.2522-.0229.1146-.1031.2292-.3324.2292-.2177 0-.3438-.126-.3438-.3095v-.3323H0v.2636c0 .7679.6074.9971 1.2493.9971.6189 0 1.1346-.2178 1.2149-.7794.0458-.298.0114-.4928 0-.5616-.1605-.722-1.467-.9283-1.5588-1.3295-.0114-.0688-.0114-.1375 0-.1834.023-.1146.1032-.2292.3095-.2292.2063 0 .321.126.321.3095v.2063h.8595v-.2407c0-.745-.6762-.8596-1.1576-.8596-.6074 0-1.1117.2063-1.2034.7564-.023.149-.0344.2866.0114.4585.1376.7106 1.364.9169 1.5358 1.3524m11.152 0c.0343.0803.0228.1834.0114.2522-.023.1146-.1032.2292-.3324.2292-.2178 0-.3438-.126-.3438-.3095v-.3323h-.917v.2636c0 .7564.596.9857 1.2379.9857.6189 0 1.1232-.2063 1.2034-.7794.0459-.298.0115-.4814 0-.5616-.1375-.7106-1.4327-.9284-1.5243-1.318-.0115-.0688-.0115-.1376 0-.1835.0229-.1146.1031-.2292.3094-.2292.1948 0 .321.126.321.3095v.2063h.848v-.2407c0-.745-.6647-.8596-1.146-.8596-.6075 0-1.1004.1948-1.192.7564-.023.149-.023.2866.0114.4585.1376.7106 1.341.9054 1.513 1.3524m2.8882.4585c.2407 0 .3094-.1605.3323-.2522.0115-.0343.0115-.0917.0115-.126v-2.533h.871v2.4642c0 .0688 0 .1948-.0114.2292-.0573.6419-.5616.8482-1.192.8482-.6303 0-1.1346-.2063-1.192-.8482 0-.0344-.0114-.1604-.0114-.2292v-2.4642h.871v2.533c0 .0458 0 .0916.0115.126 0 .0917.0688.2522.3095.2522m7.1518-.0344c.2522 0 .3324-.1605.3553-.2522.0115-.0343.0115-.0917.0115-.126v-.4929h-.3553v-.5043H24v.917c0 .0687 0 .1145-.0115.2292-.0573.6303-.596.8481-1.2034.8481-.6075 0-1.1461-.2178-1.2034-.8481-.0115-.1147-.0115-.1605-.0115-.2293v-1.444c0-.0574.0115-.172.0115-.2293.0802-.6419.596-.8482 1.2034-.8482s1.1347.2063 1.2034.8482c.0115.1031.0115.2292.0115.2292v.1146h-.8596v-.1948s0-.0803-.0115-.1261c-.0114-.0802-.0802-.2521-.3438-.2521-.2521 0-.321.1604-.3438.2521-.0115.0458-.0115.1032-.0115.1605v1.5702c0 .0458 0 .0916.0115.126 0 .0917.0917.2522.3323.2522"/></svg><svg class="lg" viewBox="0 0 24 24"><path d="M12.0069 24h-.3572l2.459-6.7453h3.3796c.5907 0 1.2364-.4533 1.4424-1.0166l2.6652-7.3085c.4396-1.1952-.2473-2.1706-1.525-2.1706h-4.6983l-3.929 10.798-2.2255 6.127C3.929 22.434 0 17.6806 0 12.007 0 6.498 3.7092 1.8546 8.7647.4396L6.4705 6.759 2.6514 17.2547h2.5415L8.4488 8.339h1.9095l-3.2558 8.9158H9.644l3.0223-8.3251c.4396-1.1952-.2473-2.1706-1.525-2.1706h-2.143l2.459-6.7453C11.636 0 11.8145 0 11.9931 0 18.6285 0 24 5.3715 24 12.007c.0137 6.6216-5.3578 11.993-11.9931 11.993zM19.2742 8.325h-1.9096l-2.6789 7.336h1.9096l2.6789-7.336z"/></svg><svg class="lg" viewBox="0 0 24 24"><path d="M1.478 10.016c.24 0 .59.046 1.046.14v.726a2.465 2.465 0 0 0-.946-.213c-.41 0-.615.118-.615.354 0 .088.041.16.124.216.069.045.258.14.568.286.446.208.743.388.89.541.176.182.264.417.264.705 0 .415-.172.73-.516.949-.279.176-.64.264-1.085.264-.375 0-.753-.046-1.133-.139v-.755c.41.135.774.203 1.09.203.437 0 .655-.121.655-.362a.302.302 0 0 0-.095-.227c-.065-.065-.232-.155-.5-.27-.481-.208-.795-.384-.94-.53a.999.999 0 0 1-.284-.73c0-.377.137-.666.413-.864.272-.196.626-.294 1.064-.294zm21.19 0c.246 0 .565.04.956.123l.09.016v.727a2.471 2.471 0 0 0-.948-.213c-.409 0-.612.118-.612.354 0 .088.04.16.123.216.066.043.256.139.57.286.443.208.74.388.889.541.176.182.264.417.264.705 0 .415-.172.73-.514.949-.28.176-.643.264-1.087.264-.376 0-.754-.046-1.134-.139v-.755c.407.135.77.203 1.09.203.437 0 .655-.121.655-.362 0-.09-.03-.166-.092-.227-.066-.065-.233-.155-.503-.27-.48-.206-.793-.382-.94-.53a.997.997 0 0 1-.284-.732c0-.376.137-.664.413-.862.272-.196.627-.294 1.064-.294zm-12.674.066l.92 2.444.942-2.444h1.257v3.825h-.968v-2.708l-1.072 2.747h-.632l-1.052-2.747v2.708H8.67v-3.825zm-5.587 0v3.825H3.386v-3.825zm3.554 0v.692H6.327v.864H7.75v.63H6.327v.908h1.677v.73h-2.66v-3.824zm8.707 0v.692h-1.634v.864h1.422v.63h-1.422v.908h1.677v.73H14.05v-3.824zm1.898 0l1.255 2.56v-2.56h.719v3.825h-1.15l-1.288-2.595v2.595h-.72v-3.825z"/></svg><svg class="lg" viewBox="0 0 24 24"><path d="M3.813 0s-2.326 2.052-2.51 6.367c-.205 4.716 2.324 9.47 10.654 10.076.026.005.055.005.08.008C7.806 11.534 4.955 5.241 3.812 0zm8.224 16.451a30.654 30.654 0 0 0 2.2 2.303H5.282c.12.278.53.472 1.463.527 5.59.332 6.38 4.719 14.381 4.719.702 0 1.14-.042 1.582-.125-3.16-.972-6-2.8-8.47-5.121h2.21c.917 0 1.325.076 1.58.191-.392-1.218-1.631-2.168-5.992-2.494z"/></svg><svg class="lg" viewBox="0 0 24 24"><path d="M17.463 11.99l-4.097-7.692-.924 1.707 3.213 5.985-5.483 10.283L4.69 11.99 11.096 0H9.27L2.882 11.99 9.269 24h1.807zm3.655 0L14.711 0h-1.807L6.517 11.99l4.117 7.712.904-1.707-3.193-6.005 5.463-10.263L19.29 11.99 12.904 24h1.807Z"/></svg><svg class="lg" viewBox="0 0 24 24"><path d="M16.331 18.171V17.06l-.022.01c-.25.121-.522.19-.801.203a1.186 1.186 0 01-.806-.237 1.038 1.038 0 01-.352-.498 1.21 1.21 0 01-.023-.667c.052-.225.178-.426.357-.569.16-.134.355-.218.562-.242a1.85 1.85 0 011.061.198l.024.013v-1.117l-.051-.014a2.862 2.862 0 00-1.011-.132 2.34 2.34 0 00-.903.206c-.287.132-.54.327-.739.571a2.221 2.221 0 00-.04 2.705c.295.378.709.645 1.175.756.491.12 1.006.102 1.487-.052l.082-.023M5.336 18.171V17.06l-.022.01c-.25.121-.522.19-.801.203a1.183 1.183 0 01-.806-.237 1.03 1.03 0 01-.351-.498 1.202 1.202 0 01-.024-.667c.052-.225.177-.426.357-.569.16-.134.355-.218.562-.242a1.85 1.85 0 011.061.198l.024.013v-1.117l-.051-.014a2.862 2.862 0 00-1.011-.132 2.344 2.344 0 00-.903.206 2.08 2.08 0 00-.74.571 2.224 2.224 0 00-.041 2.705 2.11 2.11 0 001.176.756c.491.12 1.005.102 1.487-.052l.083-.023M9.26 17.249l-.004.957.07.012c.22.041.441.069.664.085.195.019.391.022.587.012.187-.014.372-.049.551-.104.21-.06.405-.163.571-.305a1.16 1.16 0 00.333-.478 1.31 1.31 0 00-.007-.96 1.068 1.068 0 00-.298-.414 1.261 1.261 0 00-.438-.255l-.722-.268a.388.388 0 01-.197-.188.245.245 0 01.008-.219.382.382 0 01.154-.142.798.798 0 01.257-.074c.153-.022.308-.021.46.005.18.02.358.051.533.096l.038.008v-.883l-.069-.015a4.749 4.749 0 00-.543-.097 2.844 2.844 0 00-.714-.003c-.3.027-.585.143-.821.33-.16.126-.281.293-.351.484-.104.29-.105.608 0 .899.054.145.14.274.252.381.097.093.207.173.327.236.157.084.324.149.497.195.057.017.114.035.17.054l.085.031.024.01c.084.03.162.078.226.14.045.042.08.094.101.151a.325.325 0 01.001.161.339.339 0 01-.166.198.856.856 0 01-.275.086 2.032 2.032 0 01-.427.021 5.208 5.208 0 01-.557-.074 9.195 9.195 0 01-.287-.067l-.033-.006zm-2.475.995h1.05v-4.167h-1.05v4.167zm12.162-2.936a1.095 1.095 0 011.541.158 1.094 1.094 0 01-.157 1.541l-.017.014a1.096 1.096 0 01-1.367-1.713m-1.525.854a2.193 2.193 0 002.666 2.107 2.139 2.139 0 00.701-3.937 2.207 2.207 0 00-3.367 1.83M22.961 10.728a.52.52 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155M20.117 10.728a.522.522 0 001.041 0V8.139a.521.521 0 00-1.04 0v2.589M17.231 11.771a.521.521 0 001.039 0V6.17a.52.52 0 00-1.039 0v5.601M14.393 10.728a.521.521 0 001.04 0V8.139a.52.52 0 00-1.039 0v2.589M11.494 10.728a.522.522 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155M8.624 10.728a.52.52 0 001.039 0V8.139a.52.52 0 00-1.039 0v2.589M5.737 11.771a.52.52 0 001.039 0V6.17a.52.52 0 00-1.039 0v5.601M2.876 10.728a.522.522 0 001.04 0V8.139a.52.52 0 00-1.039 0v2.589M0 10.728a.521.521 0 001.039 0V9.573a.52.52 0 00-1.039 0v1.155"/></svg></div>
+  </div>
+</section>
+
+<!-- TRABAJO -->
+<section id="trabajo" class="wk-pin" style="background:#0F0F10;color:#F7F4EE"><div class="wk-st">
+  <div style="display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:space-between;align-items:flex-end;margin-bottom:48px;border-bottom:1px solid rgba(247,244,238,.25);padding-bottom:20px">
+    <h2 style="margin:0;font-weight:800;font-size:clamp(48px,6vw,104px);line-height:.95;letter-spacing:-.05em">Trabajo.</h2>
+    <div class="wk-ctl"><button type="button" class="icb2" data-act="wkPrev" aria-label="Caso anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" class="icb2" data-act="wkNext" aria-label="Caso siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </div>
+  <div class="wk-track" id="wktrack" tabindex="0" role="region" aria-label="Casos de éxito. Desplázate horizontalmente para ver más.">
+    <button type="button" class="case wk" data-act="openG0" aria-haspopup="dialog">
+      <span class="clip"><span class="ph" style="height:clamp(300px,44vw,720px)"><img src="assets/caso-aws.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-r"><strong>1.200</strong><em>asistentes</em></div></span></span>
+      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">AWS Summit</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
+    </button>
+<button type="button" class="case wk" data-act="openG1" aria-haspopup="dialog">
+      <span class="clip"><span class="ph" style="height:clamp(260px,30vw,500px)"><img src="assets/caso-fuji.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-b"><strong>+70%</strong><em>en ventas</em></div></span></span>
+      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">Fujifilm</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
+    </button>
+<button type="button" class="case wk" data-act="openG2" aria-haspopup="dialog">
+      <span class="clip"><span class="ph" style="height:clamp(260px,30vw,500px)"><img src="assets/caso-sfc.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-r"><strong>+3.000</strong><em>impactos</em></div></span></span>
+      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">Superintendencia Financiera</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
+    </button>
+<button type="button" class="case wk" data-act="openG3" aria-haspopup="dialog">
+      <span class="clip"><span class="ph" style="height:clamp(260px,30vw,500px)"><img src="assets/caso-rosario.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-b"><strong>2.000</strong><em>en línea</em></div></span></span>
+      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">Universidad del Rosario</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
+    </button>
+<button type="button" class="case wk" data-act="openG4" aria-haspopup="dialog">
+      <span class="clip"><span class="ph" style="height:clamp(260px,30vw,500px)"><img src="assets/caso-embajadas.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-r"><strong>3</strong><em>países</em></div></span></span>
+      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">Embajadas</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
+    </button>
+  </div>
+  <div class="wk-cta" style="margin-top:56px"><a class="btn wk-btn" href="#contacto">Hablemos de tu evento</a></div>
+</div></section>
+
+<!-- SERVICIOS -->
+<section id="servicios" style="padding:40px clamp(20px,5vw,72px) 110px"><div class="split">
+  <div class="rail"><div class="lbl">Servicios</div><div class="sts"><div class="st"><div class="stn">+500</div><div class="stt">eventos y activaciones</div></div><div class="st"><div class="stn">15</div><div class="stt">años en el mercado</div></div></div></div>
+  <div><h2 class="stmt">Todo en un solo equipo, con infraestructura propia: pantallas, audio, luces y taller de escenografía.</h2>
+  <div class="cards"><a class="card row" href="#contacto"><div class="ctop"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 13H5L6 7zM9 7a3 3 0 0 1 6 0"/></svg><span class="num">01</span></div><div><h3 class="ct">Activaciones y retail.</h3><p class="cd">Promotores expertos y stands con foco en ventas, no solo en exhibir.</p></div></a><a class="card row" href="#contacto"><div class="ctop"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3zM5 11a7 7 0 0 0 14 0M12 18v3"/></svg><span class="num">02</span></div><div><h3 class="ct">Eventos y foros.</h3><p class="cd">Lanzamientos y cócteles con escenografía, audio, video y pantallas HD.</p></div></a><a class="card row" href="#contacto"><div class="ctop"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 12a2 2 0 1 0 4 0a2 2 0 1 0-4 0M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"/></svg><span class="num">03</span></div><div><h3 class="ct">Híbridos y streaming.</h3><p class="cd">Estudios con croma, escenarios 3D, traducción simultánea y canales seguros.</p></div></a><a class="card row" href="#contacto"><div class="ctop"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h12v10H3zM15 11l6-3v8l-6-3"/></svg><span class="num">04</span></div><div><h3 class="ct">Producción audiovisual.</h3><p class="cd">Video corporativo 4K, drones, animación 2D y 3D, fotografía y postproducción.</p></div></a><a class="card row" href="#contacto"><div class="ctop"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3L3 6l2 4 3-1v12h8V9l3 1 2-4-5-3a4 4 0 0 1-8 0z"/></svg><span class="num">05</span></div><div><h3 class="ct">Merchandising e impresión.</h3><p class="cd">Gran formato, vallas, ropa corporativa y obsequios ejecutivos.</p></div></a><a class="card row" href="#contacto"><div class="ctop"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg><span class="num">06</span></div><div><h3 class="ct">Factor WOW.</h3><p class="cd">Realidad virtual y aumentada, gamificación, tarima 360° y experiencias fotográficas.</p></div></a></div></div>
+</div></section>
+
+<!-- CIFRAS (azul) -->
+<section id="nosotros" style="background:radial-gradient(90% 80% at 100% 0%,rgba(255,255,255,.16),transparent 60%),var(--blue);color:#F7F4EE;border-radius:clamp(24px,4vw,56px) clamp(24px,4vw,56px) 0 0;padding:110px clamp(20px,5vw,72px)">
+  <h2 style="margin:0 0 96px;font-weight:500;font-size:clamp(40px,5.4vw,84px);line-height:1;letter-spacing:-.045em;max-width:1000px"><span class="w" style="--i:0">Quince</span> <span class="w" style="--i:1">años</span> <span class="w" style="--i:2">haciendo</span> <span class="w" style="--i:3">que</span> <span class="w" style="--i:4">las</span> <span class="w" style="--i:5">marcas</span> <span class="w" style="--i:6">se</span> <span class="w" style="--i:7">vivan.</span></h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:48px">
+    <div style="border-top:1px solid #F7F4EE;padding-top:20px"><div style="font-size:clamp(80px,12vw,200px);font-weight:500;letter-spacing:-.06em;line-height:.9"><span class="sr">más de 500</span><span aria-hidden="true" class="cnt plus" style="--n:500"></span></div><div style="font-size:18px;margin-top:12px">eventos y activaciones</div></div>
+    <div style="border-top:1px solid #F7F4EE;padding-top:20px"><div style="font-size:clamp(80px,12vw,200px);font-weight:500;letter-spacing:-.06em;line-height:.9"><span class="sr">15</span><span aria-hidden="true" class="cnt" style="--n:15"></span></div><div style="font-size:18px;margin-top:12px">años de Varria en el mercado</div></div>
+    <div style="border-top:1px solid #F7F4EE;padding-top:20px"><div style="font-size:clamp(80px,12vw,200px);font-weight:500;letter-spacing:-.06em;line-height:.9"><span class="sr">2</span><span aria-hidden="true" class="cnt" style="--n:2"></span></div><div style="font-size:18px;margin-top:12px">países: Colombia y México</div></div>
+  </div>
+</section>
+
+<!-- CONTACTO (rojo) -->
+<section id="contacto" style="background:radial-gradient(90% 80% at 0% 100%,rgba(0,0,0,.18),transparent 60%),var(--red);color:#fff;padding:110px clamp(20px,5vw,72px) 90px">
+  <div style="font-size:clamp(18px,1.6vw,24px);font-weight:500;margin-bottom:16px">Contacto.</div>
+  <h2 style="margin:0;font-weight:800;font-size:clamp(48px,6vw,104px);line-height:.95;letter-spacing:-.05em">Cuéntanos tu idea.</h2>
+  <p style="margin:20px 0 0;font-size:clamp(18px,1.6vw,24px);line-height:1.4;max-width:30em">Escríbenos o llámanos y armamos el evento juntos.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:20px 36px;margin-top:48px;align-items:center">
+    <a class="pill2" href="https://wa.me/573112337634" style="display:inline-flex;align-items:center;gap:12px;background:#0F0F10;color:#F7F4EE;border-radius:999px;padding:20px 38px;font-size:18px;font-weight:500"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Escribir por WhatsApp</a>
+    <a href="tel:+573112337634" style="font-size:clamp(20px,2vw,28px);font-weight:500;letter-spacing:-.02em;border-bottom:2px solid #fff;display:inline-flex;align-items:center;gap:10px"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>311 233 7634</a>
+    <button type="button" id="cbtn" class="pill-w" data-act="toggleForm" aria-haspopup="dialog" aria-expanded="false"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>Solicitar cotización</button>
+  </div>
+</section>
+
+</main>
+<footer class="ft">
+  <div class="ftr">
+    <a href="#top" class="ftl">Varria<span style="color:var(--red)">.</span>Group</a>
+    <nav aria-label="Pie de página" class="ftn"><a href="#trabajo">Trabajo</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav>
+    <div class="fts" role="group" aria-label="Redes sociales"><a class="soc" href="https://www.instagram.com/varriagroup/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (se abre en una pestaña nueva)" title="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a><a class="soc" href="https://wa.me/573112337634" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (se abre en una pestaña nueva)" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a></div>
+  </div>
+  <div class="ftb">
+    <span>© 2026 Varria Group · Bogotá, Colombia y México · <a href="tel:+573112337634">311 233 7634</a></span>
+    <span>Borrador de dirección visual. Logos e imágenes son de ejemplo.</span>
+  </div>
+</footer>
+
+<div class="mdl" id="gal0" style="opacity:0;visibility:hidden" data-act="galClick" data-key="galKey">
+  <div class="mpn gpn" role="dialog" aria-modal="true" aria-labelledby="gt0">
+    <div class="mhd"><div><div class="gtag">001 / Eventos corporativos</div><h2 id="gt0" class="mtt">AWS Summit</h2></div><button type="button" id="gclose0" class="icb" data-act="closeGal" aria-label="Cerrar galería" style="background:#fff;color:#0F0F10;border-color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="gm"><strong class="mn">1.200</strong><span>asistentes en un solo summit</span></div>
+    <div class="gg"><div class="gt g1"><img src="assets/caso-aws.jpg" alt="Imagen de ejemplo del evento AWS Summit, 1 de 5" loading="lazy"></div><div class="gt g2"><img src="assets/caso-fuji.jpg" alt="Imagen de ejemplo del evento AWS Summit, 2 de 5" loading="lazy"></div><div class="gt g3"><img src="assets/caso-sfc.jpg" alt="Imagen de ejemplo del evento AWS Summit, 3 de 5" loading="lazy"></div><div class="gt g4"><img src="assets/caso-rosario.jpg" alt="Imagen de ejemplo del evento AWS Summit, 4 de 5" loading="lazy"></div><div class="gt g5"><img src="assets/caso-embajadas.jpg" alt="Imagen de ejemplo del evento AWS Summit, 5 de 5" loading="lazy"></div></div>
+    <div class="gf"><button type="button" class="pill-w" data-act="openQuote">Quiero un evento así</button><span class="fnote">Imágenes de ejemplo.</span></div>
+  </div>
+</div>
+<div class="mdl" id="gal1" style="opacity:0;visibility:hidden" data-act="galClick" data-key="galKey">
+  <div class="mpn gpn" role="dialog" aria-modal="true" aria-labelledby="gt1">
+    <div class="mhd"><div><div class="gtag">002 / Retail y activaciones</div><h2 id="gt1" class="mtt">Fujifilm</h2></div><button type="button" id="gclose1" class="icb" data-act="closeGal" aria-label="Cerrar galería" style="background:#fff;color:#0F0F10;border-color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="gm"><strong class="mn">+70%</strong><span>en ventas con las activaciones</span></div>
+    <div class="gg"><div class="gt g1"><img src="assets/caso-fuji.jpg" alt="Imagen de ejemplo del evento Fujifilm, 1 de 5" loading="lazy"></div><div class="gt g2"><img src="assets/caso-sfc.jpg" alt="Imagen de ejemplo del evento Fujifilm, 2 de 5" loading="lazy"></div><div class="gt g3"><img src="assets/caso-rosario.jpg" alt="Imagen de ejemplo del evento Fujifilm, 3 de 5" loading="lazy"></div><div class="gt g4"><img src="assets/caso-embajadas.jpg" alt="Imagen de ejemplo del evento Fujifilm, 4 de 5" loading="lazy"></div><div class="gt g5"><img src="assets/caso-sfc2.jpg" alt="Imagen de ejemplo del evento Fujifilm, 5 de 5" loading="lazy"></div></div>
+    <div class="gf"><button type="button" class="pill-w" data-act="openQuote">Quiero un evento así</button><span class="fnote">Imágenes de ejemplo.</span></div>
+  </div>
+</div>
+<div class="mdl" id="gal2" style="opacity:0;visibility:hidden" data-act="galClick" data-key="galKey">
+  <div class="mpn gpn" role="dialog" aria-modal="true" aria-labelledby="gt2">
+    <div class="mhd"><div><div class="gtag">003 / Híbrido y streaming</div><h2 id="gt2" class="mtt">Superintendencia Financiera</h2></div><button type="button" id="gclose2" class="icb" data-act="closeGal" aria-label="Cerrar galería" style="background:#fff;color:#0F0F10;border-color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="gm"><strong class="mn">+3.000</strong><span>impactos por edición</span></div>
+    <div class="gg"><div class="gt g1"><img src="assets/caso-sfc.jpg" alt="Imagen de ejemplo del evento Superintendencia Financiera, 1 de 5" loading="lazy"></div><div class="gt g2"><img src="assets/caso-rosario.jpg" alt="Imagen de ejemplo del evento Superintendencia Financiera, 2 de 5" loading="lazy"></div><div class="gt g3"><img src="assets/caso-embajadas.jpg" alt="Imagen de ejemplo del evento Superintendencia Financiera, 3 de 5" loading="lazy"></div><div class="gt g4"><img src="assets/caso-sfc2.jpg" alt="Imagen de ejemplo del evento Superintendencia Financiera, 4 de 5" loading="lazy"></div><div class="gt g5"><img src="assets/caso-awsp.jpg" alt="Imagen de ejemplo del evento Superintendencia Financiera, 5 de 5" loading="lazy"></div></div>
+    <div class="gf"><button type="button" class="pill-w" data-act="openQuote">Quiero un evento así</button><span class="fnote">Imágenes de ejemplo.</span></div>
+  </div>
+</div>
+<div class="mdl" id="gal3" style="opacity:0;visibility:hidden" data-act="galClick" data-key="galKey">
+  <div class="mpn gpn" role="dialog" aria-modal="true" aria-labelledby="gt3">
+    <div class="mhd"><div><div class="gtag">004 / Producción y streaming</div><h2 id="gt3" class="mtt">Universidad del Rosario</h2></div><button type="button" id="gclose3" class="icb" data-act="closeGal" aria-label="Cerrar galería" style="background:#fff;color:#0F0F10;border-color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="gm"><strong class="mn">2.000</strong><span>personas en línea, aproximadamente</span></div>
+    <div class="gg"><div class="gt g1"><img src="assets/caso-rosario.jpg" alt="Imagen de ejemplo del evento Universidad del Rosario, 1 de 5" loading="lazy"></div><div class="gt g2"><img src="assets/caso-embajadas.jpg" alt="Imagen de ejemplo del evento Universidad del Rosario, 2 de 5" loading="lazy"></div><div class="gt g3"><img src="assets/caso-sfc2.jpg" alt="Imagen de ejemplo del evento Universidad del Rosario, 3 de 5" loading="lazy"></div><div class="gt g4"><img src="assets/caso-awsp.jpg" alt="Imagen de ejemplo del evento Universidad del Rosario, 4 de 5" loading="lazy"></div><div class="gt g5"><img src="assets/caso-fuji2.jpg" alt="Imagen de ejemplo del evento Universidad del Rosario, 5 de 5" loading="lazy"></div></div>
+    <div class="gf"><button type="button" class="pill-w" data-act="openQuote">Quiero un evento así</button><span class="fnote">Imágenes de ejemplo.</span></div>
+  </div>
+</div>
+<div class="mdl" id="gal4" style="opacity:0;visibility:hidden" data-act="galClick" data-key="galKey">
+  <div class="mpn gpn" role="dialog" aria-modal="true" aria-labelledby="gt4">
+    <div class="mhd"><div><div class="gtag">005 / Foros y cócteles</div><h2 id="gt4" class="mtt">Embajadas</h2></div><button type="button" id="gclose4" class="icb" data-act="closeGal" aria-label="Cerrar galería" style="background:#fff;color:#0F0F10;border-color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="gm"><strong class="mn">3</strong><span>países: Países Bajos, Suiza e Italia</span></div>
+    <div class="gg"><div class="gt g1"><img src="assets/caso-embajadas.jpg" alt="Imagen de ejemplo del evento Embajadas, 1 de 5" loading="lazy"></div><div class="gt g2"><img src="assets/caso-sfc2.jpg" alt="Imagen de ejemplo del evento Embajadas, 2 de 5" loading="lazy"></div><div class="gt g3"><img src="assets/caso-awsp.jpg" alt="Imagen de ejemplo del evento Embajadas, 3 de 5" loading="lazy"></div><div class="gt g4"><img src="assets/caso-fuji2.jpg" alt="Imagen de ejemplo del evento Embajadas, 4 de 5" loading="lazy"></div><div class="gt g5"><img src="assets/caso-solid.jpg" alt="Imagen de ejemplo del evento Embajadas, 5 de 5" loading="lazy"></div></div>
+    <div class="gf"><button type="button" class="pill-w" data-act="openQuote">Quiero un evento así</button><span class="fnote">Imágenes de ejemplo.</span></div>
+  </div>
+</div>
+
+<div class="mdl" id="mform" style="opacity:0;visibility:hidden" data-act="mdlClick" data-key="mdlKey">
+  <div class="mpn" role="dialog" aria-modal="true" aria-labelledby="mtitle">
+    <div class="mhd"><h2 id="mtitle" class="mtt">Solicitar cotización.</h2><button type="button" id="mclose" class="icb" data-act="toggleForm" aria-label="Cerrar formulario" style="background:#fff;color:#0F0F10;border-color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <form id="cform" class="cform" novalidate style="display:block">
+        <div class="fgrid">
+          <label class="fl">Nombre<input name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required></label>
+          <label class="fl">Empresa<input name="empresa" type="text" autocomplete="organization" placeholder="Tu empresa" required></label>
+          <label class="fl">Correo electrónico<input name="correo" type="email" autocomplete="email" placeholder="correo@empresa.com" required></label>
+          <label class="fl">Teléfono / WhatsApp<input name="telefono" type="tel" autocomplete="tel" placeholder="+57 300 000 0000"></label>
+          <label class="fl full">Tipo de servicio<select name="servicio"><option value="">Selecciona un servicio…</option><option>Activaciones y retail</option><option>Eventos y foros</option><option>Híbridos y streaming</option><option>Producción audiovisual</option><option>Merchandising e impresión</option><option>Factor WOW</option><option>Otro o aún no lo sé</option></select></label>
+          <label class="fl full">Cuéntanos tu proyecto<textarea name="mensaje" rows="4" placeholder="Describe tu evento, fechas aproximadas, número de asistentes…" required></textarea></label>
+        </div>
+        <div class="fact"><button type="button" class="pill2 fsend" data-act="submitForm">Enviar solicitud <span aria-hidden="true">→</span></button><span class="fnote">Tus datos solo se usan para responderte.</span></div>
+      </form>
+      <div class="fok" role="status" aria-live="polite" style="display:none"><div class="fokt">Gracias, <span id="sentName"></span>.</div><p>Recibimos tu solicitud. Te respondemos pronto.</p>
+  </div>
+</div>
+
+</div>
+
+<script>
+(function(){
+'use strict';
+// Para recibir las solicitudes del formulario: pega aquí la URL de tu endpoint (por ejemplo Formspree: https://formspree.io/f/XXXX).
+// Si queda vacío, el formulario solo simula el envío.
+var FORM_ENDPOINT='';
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var trig=null,galOpen=null,formOpen=false,paused=false;
+function focusLater(fn,ms){setTimeout(fn,ms)}
+function lock(on){document.body.style.overflow=on?'hidden':''}
+function trap(e,sel){if(e.key!=='Tab')return;var f=$$(sel,e.currentTarget).filter(function(x){return !x.disabled&&x.offsetParent!==null});if(!f.length)return;var a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}
+function menu(on){$('#ovlw').style.display=on?'block':'none';$('.menu-btn').setAttribute('aria-expanded',on?'true':'false');if(on)focusLater(function(){var b=$('#closebtn');b&&b.focus()},60);else focusLater(function(){var b=$('.menu-btn');b&&b.focus()},30)}
+function setG(i){$$('[id^="gal"]').forEach(function(m){var on=String(i)===m.id.slice(3);m.style.opacity=on?'1':'0';m.style.visibility=on?'visible':'hidden'});galOpen=i}
+function openG(i){trig=document.activeElement;setG(i);lock(true);focusLater(function(){var b=$('#gclose'+i);b&&b.focus({preventScroll:true})},450)}
+function closeG(){setG(null);lock(false);focusLater(function(){trig&&trig.focus&&trig.focus({preventScroll:true})},50)}
+function setForm(on){formOpen=on;var m=$('#mform');m.style.opacity=on?'1':'0';m.style.visibility=on?'visible':'hidden';$('#cbtn').setAttribute('aria-expanded',on?'true':'false');lock(on)}
+function closeForm(){setForm(false);focusLater(function(){var t=$('#cbtn');t&&t.focus({preventScroll:true})},50)}
+function scrollTrack(d){var t=$('#wktrack');if(!t)return;var c=t.querySelector('.wk');t.scrollBy({left:d*(c?c.offsetWidth+20:600),behavior:'smooth'})}
+function setPaused(p){paused=p;$$('.bg,.bg img').forEach(function(e){e.style.animationPlayState=p?'paused':'running'});var b=$('[data-act="toggle"]');b.setAttribute('aria-pressed',p?'true':'false');var l=p?'Reproducir fondo':'Pausar fondo';b.setAttribute('aria-label',l);b.setAttribute('title',l);b.querySelector('path').setAttribute('d',p?'M8 5v14l11-7z':'M7 5h3.5v14H7zM13.5 5H17v14h-3.5z')}
+var act={
+openMenu:function(){menu(true)},closeMenu:function(){menu(false)},
+toggle:function(){setPaused(!paused)},wkPrev:function(){scrollTrack(-1)},wkNext:function(){scrollTrack(1)},
+openG0:function(){openG(0)},openG1:function(){openG(1)},openG2:function(){openG(2)},openG3:function(){openG(3)},openG4:function(){openG(4)},
+closeGal:closeG,
+openQuote:function(){setG(null);setForm(true);focusLater(function(){var t=$('#cform input');t&&t.focus({preventScroll:true})},450)},
+toggleForm:function(){var o=!formOpen;setForm(o);focusLater(function(){var t=o?$('#cform input'):$('#cbtn');t&&t.focus({preventScroll:true})},o?450:50)},
+submitForm:function(){var f=$('#cform');if(!f||!f.reportValidity())return;var n=(f.elements['nombre'].value||'').trim().split(' ')[0];
+ function done(){$('#sentName').textContent=n;f.style.display='none';$('.fok').style.display='block'}
+ if(!FORM_ENDPOINT){done();return}
+ var d={};$$('input,select,textarea',f).forEach(function(x){if(x.name)d[x.name]=x.value});
+ var b=$('.fsend');b.disabled=true;
+ fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;done()}).catch(function(){b.disabled=false;alert('No pudimos enviar tu solicitud. Escríbenos por WhatsApp o inténtalo de nuevo.')})}
+};
+var key={
+ovlKey:function(e){if(e.key==='Escape')menu(false)},
+galKey:function(e){if(e.key==='Escape'){closeG();return}trap(e,'button,a,input')},
+mdlKey:function(e){if(e.key==='Escape'){closeForm();return}trap(e,'input,select,textarea,button')},
+galClick:function(e){if(e.target===e.currentTarget)closeG()},
+mdlClick:function(e){if(e.target===e.currentTarget)closeForm()}
+};
+$$('[data-act]').forEach(function(el){var n=el.getAttribute('data-act');if(act[n])el.addEventListener('click',act[n]);else if(key[n])el.addEventListener('click',key[n])});
+$$('[data-key]').forEach(function(el){var n=el.getAttribute('data-key');if(key[n])el.addEventListener('keydown',key[n])});
+document.addEventListener('keydown',function(e){if(e.key!=='Escape')return;if(galOpen!==null&&galOpen!==undefined)closeG();else if(formOpen)closeForm();else if($('#ovlw').style.display==='block')menu(false)});
+})();
+
+</script>
+</body>
+</html>
