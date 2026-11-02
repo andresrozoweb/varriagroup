@@ -171,12 +171,12 @@ section[aria-label="Clientes"]:hover .marq{animation-play-state:paused}
 .wk-btn{display:inline-block;border:1px solid #F7F4EE;border-radius:999px;padding:16px 30px;font-size:16px;font-weight:600;color:#F7F4EE}
 .wk-btn:hover{background:#F7F4EE;color:#0F0F10}
 #trabajo a:focus-visible{outline-color:#fff;box-shadow:0 0 0 6px #0F0F10}
-.bg{position:absolute;inset:0;opacity:0;overflow:hidden;animation:bgfade 12s linear infinite}
-.bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:bgzoom 12s cubic-bezier(.3,0,.6,1) infinite}
-.bg2 img{transform-origin:50% 0;object-position:50% 0!important}
-.bg2,.bg2 img{animation-delay:4s}.bg3,.bg3 img{animation-delay:8s}
-@keyframes bgfade{0%{opacity:0}3%{opacity:1}33%{opacity:1}36.5%{opacity:0}100%{opacity:0}}
-@keyframes bgzoom{0%{transform:scale(1.02)}37%{transform:scale(1.16) translate(-1.2%,-.8%)}100%{transform:scale(1.16)}}
+.bg{position:absolute;inset:0;opacity:0;overflow:hidden;animation:bgfade 18s linear infinite}
+.bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:bgzoom 18s cubic-bezier(.3,0,.6,1) infinite}
+
+.bg2,.bg2 img{animation-delay:3.6s}.bg3,.bg3 img{animation-delay:7.2s}.bg4,.bg4 img{animation-delay:10.8s}.bg5,.bg5 img{animation-delay:14.4s}
+@keyframes bgfade{0%{opacity:0}2%{opacity:1}20%{opacity:1}22.5%{opacity:0}100%{opacity:0}}
+@keyframes bgzoom{0%{transform:scale(1.02)}23%{transform:scale(1.14) translate(-1.2%,-.8%)}100%{transform:scale(1.14)}}
 @media (prefers-reduced-motion:reduce){.bg,.bg img{animation:none}.bg1{opacity:1}}
 .logo-ph{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:200px;height:72px;border:1.5px dashed #6b6b66;border-radius:8px;font-size:14px;font-weight:600;letter-spacing:0;color:#44443f;white-space:normal;text-align:center;padding:0 12px}
 .lg{flex:0 0 auto;width:180px;height:64px;fill:#0F0F10;opacity:.85}
@@ -399,13 +399,17 @@ a,button{transition:color .35s ease,background-color .35s ease,border-color .35s
   <div aria-hidden="true" class="split-bg">
     <div class="pn pl">
       <div class="bg bg1" style="animation-play-state:running"><img src="assets/hero-1.jpg" alt="" style="object-position:50% 55%;animation-play-state:running"></div>
-      <div class="bg bg2" style="animation-play-state:running"><img src="assets/hero-2.jpg" alt="" style="height:130%;bottom:auto;transform-origin:50% 0;object-position:50% 0%;animation-play-state:running"></div>
-      <div class="bg bg3" style="animation-play-state:running"><img src="assets/hero-3.jpg" alt="" style="object-position:50% 85%;animation-play-state:running"></div>
+      <div class="bg bg2" style="animation-play-state:running"><img src="assets/hero-5.jpg" alt="" style="object-position:50% 30%;animation-play-state:running"></div>
+      <div class="bg bg3" style="animation-play-state:running"><img src="assets/hero-2.jpg" alt="" style="height:130%;bottom:auto;transform-origin:50% 0;object-position:50% 0%;animation-play-state:running"></div>
+      <div class="bg bg4" style="animation-play-state:running"><img src="assets/hero-4.jpg" alt="" style="object-position:50% 50%;animation-play-state:running"></div>
+      <div class="bg bg5" style="animation-play-state:running"><img src="assets/hero-3.jpg" alt="" style="object-position:50% 85%;animation-play-state:running"></div>
     </div>
     <div class="pn pr">
       <div class="bg bg1" style="animation-play-state:running"><img src="assets/hero-2.jpg" alt="" style="height:130%;bottom:auto;transform-origin:50% 0;object-position:50% 0%;animation-play-state:running"></div>
-      <div class="bg bg2" style="animation-play-state:running"><img src="assets/hero-3.jpg" alt="" style="object-position:50% 85%;animation-play-state:running"></div>
-      <div class="bg bg3" style="animation-play-state:running"><img src="assets/hero-1.jpg" alt="" style="object-position:50% 55%;animation-play-state:running"></div>
+      <div class="bg bg2" style="animation-play-state:running"><img src="assets/hero-4.jpg" alt="" style="object-position:50% 50%;animation-play-state:running"></div>
+      <div class="bg bg3" style="animation-play-state:running"><img src="assets/hero-3.jpg" alt="" style="object-position:50% 85%;animation-play-state:running"></div>
+      <div class="bg bg4" style="animation-play-state:running"><img src="assets/hero-1.jpg" alt="" style="object-position:50% 55%;animation-play-state:running"></div>
+      <div class="bg bg5" style="animation-play-state:running"><img src="assets/hero-5.jpg" alt="" style="object-position:50% 30%;animation-play-state:running"></div>
     </div>
   </div>
   <div class="shade" aria-hidden="true"></div>
