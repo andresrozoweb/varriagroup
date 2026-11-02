@@ -41,7 +41,7 @@ a{color:inherit;text-decoration:none}
 @media (prefers-reduced-motion:reduce){.marq{animation:none}.case .ph{transition:none}}
 .vid{position:absolute;inset:0;background:radial-gradient(55% 60% at 18% 28%,var(--blue) 0%,transparent 62%),radial-gradient(50% 55% at 82% 72%,var(--red) 0%,transparent 60%),radial-gradient(40% 40% at 60% 20%,rgba(255,255,255,.22) 0%,transparent 60%),#0F0F10;background-size:170% 170%;}
 @keyframes drift{from{background-position:0% 0%}to{background-position:100% 100%}}
-.shade{position:absolute;inset:0;background:radial-gradient(75% 45% at 50% 50%,rgba(15,15,16,.45),rgba(15,15,16,0) 100%),linear-gradient(rgba(15,15,16,.45),rgba(15,15,16,.45)),linear-gradient(180deg,rgba(15,15,16,.35) 0%,rgba(15,15,16,0) 30%,rgba(15,15,16,0) 70%,rgba(15,15,16,.4) 100%)}
+.shade{position:absolute;inset:0;background:radial-gradient(85% 55% at 50% 50%,rgba(10,10,11,.6),rgba(10,10,11,0) 100%),linear-gradient(rgba(10,10,11,.5),rgba(10,10,11,.5)),linear-gradient(180deg,rgba(10,10,11,.5) 0%,rgba(10,10,11,0) 28%,rgba(10,10,11,0) 65%,rgba(10,10,11,.55) 100%)}
 @media (prefers-reduced-motion:reduce){.vid{animation:none}}
 .w{opacity:1}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -199,7 +199,7 @@ section[aria-label="Clientes"]:hover .marq{animation-play-state:paused}
 .icard .im{aspect-ratio:16/10;border-radius:14px;overflow:hidden;position:relative;background:#0F0F10}
 .icard .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 @media (max-width:900px){.split{grid-template-columns:1fr}.rail{flex-direction:row;flex-wrap:wrap}.sts{flex-direction:row;flex-wrap:wrap;gap:24px 40px}.cards{grid-template-columns:1fr}}
-.split-bg{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}
+.split-bg{position:absolute;z-index:0;isolation:isolate;inset:0;display:grid;grid-template-columns:1fr 1fr}
 .pn{position:relative;overflow:hidden}
 .pr{border-left:1px solid rgba(255,255,255,.35)}
 .hk{font-size:clamp(14px,1.1vw,18px);font-weight:600;letter-spacing:.02em}
