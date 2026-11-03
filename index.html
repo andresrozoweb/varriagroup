@@ -372,6 +372,18 @@ a,button{transition:color .35s ease,background-color .35s ease,border-color .35s
 .wk-track:focus-visible{outline:3px solid #fff;outline-offset:6px;border-radius:6px}
 @media (max-width:700px){.wk-track .wk{flex-basis:82vw}}
 @media (prefers-reduced-motion:reduce){.wk-track{scroll-behavior:auto}}
+@media (max-width:700px){
+.wk-st .wk-ctl{display:none}
+.wk-st .wk-track{display:block!important;overflow:visible!important;scroll-snap-type:none;margin:0!important;padding:0 0 24px!important;width:auto}
+.wk-st .wk-track .wkc{position:sticky;width:100%;flex:none;margin:0 0 34px;box-shadow:0 -14px 34px rgba(0,0,0,.55);transform-origin:50% 100%;will-change:auto}
+.wk-st .wk-track .wkc:nth-child(1){top:100px;transform:rotate(-1.2deg)}
+.wk-st .wk-track .wkc:nth-child(2){top:114px;transform:rotate(1deg)}
+.wk-st .wk-track .wkc:nth-child(3){top:128px;transform:rotate(-.8deg)}
+.wk-st .wk-track .wkc:nth-child(4){top:142px;transform:rotate(1.2deg)}
+.wk-st .wk-track .wkc:nth-child(5){top:156px;transform:rotate(-1deg)}
+.wk-st .wk-track .wkc:hover{transform:inherit}
+.wk-st .wk-track .wkc .ph{aspect-ratio:16/11}
+}
 </style>
 
 </head>
