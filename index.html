@@ -327,14 +327,14 @@ a,button{transition:color .35s ease,background-color .35s ease,border-color .35s
 .ar svg{width:22px;height:22px}
 .wk:hover .ar{background:#F7F4EE;color:#0F0F10;border-color:#F7F4EE;transform:translate(3px,-3px)}
 .wk-st{padding:100px clamp(20px,5vw,72px) 110px}
-@supports (animation-timeline:view()) and (not (prefers-reduced-motion:reduce)){
+@media (not (prefers-reduced-motion:reduce)){
 .wk-pin{--pad:clamp(20px,5vw,72px);--gap:clamp(12px,1.6vw,24px);--cw:calc((100vw - 2*var(--pad) - 2*var(--gap))/3);--D:calc(5*var(--cw) + 4*var(--gap) - 100vw + 2*var(--pad));height:calc(100vh + var(--D)*1.1);height:calc(100svh + var(--D)*1.1);view-timeline-name:--wkp;view-timeline-axis:block;overflow-x:clip}
 @media (max-width:700px){.wk-pin{--cw:78vw}.wk-st{padding-top:84px!important}.wk-st .wk-track .wk .ph{aspect-ratio:3/4}}
 @media (max-width:700px){.wk-st .wk-track .wk .ph{height:min(96vw,50vh)!important}.wk-st .wk-n{font-size:22px!important}.wk-st .wk-row{margin-top:14px}.wk-st .ar{width:44px;height:44px;flex:none}}
 .wk-st{position:sticky;top:0;height:100vh;height:100svh;box-sizing:border-box;padding-top:88px;padding-bottom:20px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
 .wk-st>div:first-child{margin-bottom:28px!important}
 .wk-st .wk-ctl{display:none}
-.wk-track{align-items:flex-start;overflow:visible;scroll-snap-type:none;width:max-content;margin:0;padding:0;animation:wkslide linear both;animation-timeline:--wkp;animation-range:contain 0% contain 100%}
+.wk-track{align-items:flex-start;overflow:visible;scroll-snap-type:none;width:max-content;margin:0;padding:0;will-change:transform;transform:translate3d(0,0,0);backface-visibility:hidden}
 .wk-st .wk-track .wk{flex:0 0 var(--cw)}
 .wk-st .wk-track .wk .ph{height:auto!important;aspect-ratio:4/3}
 @media (max-width:700px){.wk-st .wk-track .wk .ph{aspect-ratio:4/5}}
@@ -343,6 +343,22 @@ a,button{transition:color .35s ease,background-color .35s ease,border-color .35s
 @media (max-width:700px){#trabajo .wk-btn{display:none}.wk-st>div:first-child{margin-bottom:20px!important;padding-bottom:14px!important}}
 .wk .ph::after{content:'';display:block!important;position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(14,26,90,.25) 0%,rgba(14,26,90,0) 30%,rgba(10,16,52,.55) 65%,rgba(6,6,12,.92) 100%)!important}
 .wk .bd{z-index:1}
+.wkc{border-radius:22px;overflow:hidden;background:#0F0F10;display:flex!important;flex-direction:column;text-align:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.wkc:hover{transform:translateY(-6px)}
+.wkc .clip{border-radius:0!important;display:block}
+.wk-st .wk-track .wkc .ph{aspect-ratio:16/10;height:auto!important}
+.wkc .ph::after{display:none!important}
+.wkp{display:flex;flex-direction:column;justify-content:space-between;gap:20px;flex:1;padding:22px 24px 22px;background:linear-gradient(155deg,var(--c1),var(--c2));color:#fff}
+.wkm{display:block}
+.wkm strong{display:block;font-size:clamp(46px,4.8vw,80px);font-weight:800;letter-spacing:-.05em;line-height:.95}
+.wkm em{display:block;margin-top:8px;font-style:normal;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.92}
+.wkp .wk-row{margin-top:0;padding-top:16px;border-top:1px solid rgba(255,255,255,.3)}
+.wk-st .wkp .wk-n,.wkp .wk-n{font-size:clamp(18px,1.5vw,24px)!important;line-height:1.1}
+.wkp .ar{border-color:rgba(255,255,255,.6);color:#fff}
+.wkc:hover .wkp .ar{background:#fff;color:#0F0F10}
+.wk-st .wk-track{align-items:stretch!important}
+@media (max-width:700px){.wk-st .wk-track .wkc .ph{aspect-ratio:4/3}.wkm strong{font-size:clamp(44px,14vw,60px)}}
+
 }
 @keyframes wkslide{to{transform:translateX(calc(-1*var(--D)))}}
 .wk-ctl{display:flex;gap:10px}
@@ -475,26 +491,11 @@ a,button{transition:color .35s ease,background-color .35s ease,border-color .35s
     <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><a class="btn wk-btn" href="#contacto">Hablemos de tu evento</a><div class="wk-ctl"><button type="button" class="icb2" data-act="wkPrev" aria-label="Caso anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" class="icb2" data-act="wkNext" aria-label="Caso siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
   </div>
   <div class="wk-track" id="wktrack" tabindex="0" role="region" aria-label="Casos de éxito. Desplázate horizontalmente para ver más.">
-    <button type="button" class="case wk" data-act="openG0" aria-haspopup="dialog">
-      <span class="clip"><span class="ph" style="height:clamp(300px,44vw,720px)"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-r"><strong>1.200</strong><em>asistentes</em></div></span></span>
-      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">AWS Summit</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
-    </button>
-<button type="button" class="case wk" data-act="openG1" aria-haspopup="dialog">
-      <span class="clip"><span class="ph" style="height:clamp(260px,30vw,500px)"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-b"><strong>+70%</strong><em>en ventas</em></div></span></span>
-      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">Fujifilm</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
-    </button>
-<button type="button" class="case wk" data-act="openG2" aria-haspopup="dialog">
-      <span class="clip"><span class="ph" style="height:clamp(260px,30vw,500px)"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-r"><strong>+3.000</strong><em>impactos</em></div></span></span>
-      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">Superintendencia Financiera</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
-    </button>
-<button type="button" class="case wk" data-act="openG3" aria-haspopup="dialog">
-      <span class="clip"><span class="ph" style="height:clamp(260px,30vw,500px)"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-b"><strong>2.000</strong><em>en línea</em></div></span></span>
-      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">Universidad del Rosario</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
-    </button>
-<button type="button" class="case wk" data-act="openG4" aria-haspopup="dialog">
-      <span class="clip"><span class="ph" style="height:clamp(260px,30vw,500px)"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div class="bd bd-r"><strong>3</strong><em>países</em></div></span></span>
-      <span class="wk-row"><span class="ttl wk-n" style="font-size:clamp(24px,2.4vw,40px)">Embajadas</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span>
-    </button>
+    <button type="button" class="case wk wkc" data-act="openG0" aria-haspopup="dialog"><span class="clip"><span class="ph"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></span></span><span class="wkp" style="--c1:#1F3FB0;--c2:#14237A"><span class="wkm"><strong>1.200</strong><em>asistentes</em></span><span class="wk-row"><span class="ttl wk-n">AWS Summit</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span></span></button>
+<button type="button" class="case wk wkc" data-act="openG1" aria-haspopup="dialog"><span class="clip"><span class="ph"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></span></span><span class="wkp" style="--c1:#5B2A9E;--c2:#341763"><span class="wkm"><strong>+70%</strong><em>en ventas</em></span><span class="wk-row"><span class="ttl wk-n">Fujifilm</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span></span></button>
+<button type="button" class="case wk wkc" data-act="openG2" aria-haspopup="dialog"><span class="clip"><span class="ph"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></span></span><span class="wkp" style="--c1:#D62828;--c2:#8E1230"><span class="wkm"><strong>+3.000</strong><em>impactos</em></span><span class="wk-row"><span class="ttl wk-n">Superintendencia Financiera</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span></span></button>
+<button type="button" class="case wk wkc" data-act="openG3" aria-haspopup="dialog"><span class="clip"><span class="ph"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></span></span><span class="wkp" style="--c1:#7A1230;--c2:#3E0A1C"><span class="wkm"><strong>2.000</strong><em>en línea</em></span><span class="wk-row"><span class="ttl wk-n">Universidad del Rosario</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span></span></button>
+<button type="button" class="case wk wkc" data-act="openG4" aria-haspopup="dialog"><span class="clip"><span class="ph"><img src="assets/caso-placeholder.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></span></span><span class="wkp" style="--c1:#2A4FD6;--c2:#5B2A9E"><span class="wkm"><strong>3</strong><em>países</em></span><span class="wk-row"><span class="ttl wk-n">Embajadas</span><i class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></i></span></span></button>
   </div>
 </div></section>
 
@@ -620,6 +621,8 @@ function setForm(on){formOpen=on;var m=$('#mform');m.style.opacity=on?'1':'0';m.
 function closeForm(){setForm(false);focusLater(function(){var t=$('#cbtn');t&&t.focus({preventScroll:true})},50)}
 function scrollTrack(d){var t=$('#wktrack');if(!t)return;var c=t.querySelector('.wk');t.scrollBy({left:d*(c?c.offsetWidth+20:600),behavior:'smooth'})}
 function setPaused(p){paused=p;$$('.bg,.bg img').forEach(function(e){e.style.animationPlayState=p?'paused':'running'});var b=$('[data-act="toggle"]');b.setAttribute('aria-pressed',p?'true':'false');var l=p?'Reproducir fondo':'Pausar fondo';b.setAttribute('aria-label',l);b.setAttribute('title',l);b.querySelector('path').setAttribute('d',p?'M8 5v14l11-7z':'M7 5h3.5v14H7zM13.5 5H17v14h-3.5z')}
+function initWk(){var pin=document.getElementById('trabajo'),tr=document.getElementById('wktrack');if(!pin||!tr)return;if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;var raf=0;function upd(){raf=0;var st=pin.querySelector('.wk-st'),cs=getComputedStyle(st);var inner=st.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);var f=tr.firstElementChild,l=tr.lastElementChild;var D=Math.max(0,(l.offsetLeft+l.offsetWidth-f.offsetLeft)-inner);var total=Math.max(1,pin.offsetHeight-window.innerHeight);var p=Math.min(1,Math.max(0,-pin.getBoundingClientRect().top/total));tr.style.transform='translate3d('+(-p*D).toFixed(1)+'px,0,0)'}function req(){if(!raf)raf=requestAnimationFrame(upd)}window.addEventListener('scroll',req,{passive:true});window.addEventListener('resize',req);upd()}
+initWk();
 var act={
 openMenu:function(){menu(true)},closeMenu:function(){menu(false)},
 toggle:function(){setPaused(!paused)},wkPrev:function(){scrollTrack(-1)},wkNext:function(){scrollTrack(1)},
